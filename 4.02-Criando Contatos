@@ -1,0 +1,7 @@
+Para criar um contato:
+1.Entre na aba Contatos
+2.Click na caixa “Create a Contact” na canto inferior esquerdo da página.
+3.Digite o nome e o telefone do contato*. Também poderá ser necessário a inclusão do ID do Twitter, caso o mesmo seja um canal ativo.
+4.Seu novo contato irá aparecer no topo da aba dos contatos.
+
+*Todos os números adicionados ao ilhapush devem conter o código do país, aderindo assim o formato E164. 
