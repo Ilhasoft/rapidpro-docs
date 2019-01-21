@@ -1,0 +1,29 @@
+Mensagens são as interações realizadas de entrada e saída que a conta tem tido com os contatos ou com o aplicativo Ilhapush. Semelhante a uma conta de e-mail, o ilhapush permite visualizar as mensagens e arquivá las e também mantém o controle das chamadas que são recebidas em seu canal para que possam ser retornadas. Todas as mensagens são organizadas no lado esquerdo da página.(colocar imagem) 
+
+Caixa de Entrada: As mensagens armazenadas na pasta “Caixa de entrada” são todas as mensagens recebidas que não foram desencadeadas ou foram recebidas por um fluxo. Mensagens nesta pasta são enviadas por contatos que não estão ativos em um fluxo.
+
+Fluxos: As mensagens armazenadas na pasta “Fluxos” incluem mensagens recebidas por seus fluxos. Mensagens nesta pasta são enviadas por contatos que estão ativos nos fluxos no momento que as mensagens são enviadas.
+
+Arquivado: O arquivamento remove as mensagens da caixa de entrada, mas as mantém em sua conta para que você possa encontrá-las mais tarde. Mensagens da sua “Caixa de entrada” ou “fluxos” podem ser armazenadas na pasta “arquivado”. Caso queira excluir alguma mensagem, a mesma deve ser colocada na pasta “arquivado” antes que ela possa ser excluída. A qualquer momento uma mensagem pode ser devolvida à sua pasta original.
+
+Caixa de Saída: A pasta “Caixa de Saída” contém mensagens pendentes que podem acumular-se no envio de um broadcast muito grande. Uma vez que uma mensagem é enviada, ela é movida da pasta “Caixa de saída” para a pasta “Enviados”.
+
+Chamadas: A pasta “Chamadas” contém as chamadas feitas e recebidas do canal conectado à sua conta. É mostrado data, direção e duração de cada chamada.
+
+Agendamento: A pasta “Agendamento” contém mensagens que foram programadas para serem enviadas no futuro ou em um agendamento. Navegue até esta pasta para ver ou editar mensagens agendadas.
+
+Não enviadas: A pasta “Não enviadas” contém mensagens que não foram capazes de serem enviadas quando transmitidas.
+
+Os status de mensagens: A cada mensagem é atribuído um símbolo:
+
+O ícone “entregue” indica que uma mensagem foi entregue, e é seguida pelo texto da mensagem.
+
+O ícone “enviado” indica que uma mensagem foi enviada, mas não retornou uma confirmação de entrega. Algumas operadoras e canais não são capazes de fornecer confirmação de entrega. Essa mensagem deve ser considerada entregue a menos que ela esteja dentro da pasta “Caixa de saída” na guia mensagens.
+
+O ícone de contato indica que uma mensagem foi recebida de um contato, e é seguida pelo texto da mensagem.
+
+O ícone de transmissão indica uma transmissão de broadcast, e é seguido pelo número de contatos visados pela mensagem, bem como o seu conteúdo.
+
+O ícone de cuidado indica que uma mensagem falhou ao ser enviada, e é seguido pelo texto da mensagem. Note que ao deixar a seta do mouse sobre cada um destes ícones ele irá revelar o canal pelo qual ela foi enviada ou recebida.
+
+INSERIR OS ICONES
