@@ -1,0 +1,18 @@
+A cada contato podem ser atribuídos alguns atributos chamados de campos de contato, que possuem valores como seus nomes, números de telefone e qualquer outra informação individual que você deseja incluir. Os campos de contato são divididos em dois tipos, campos padrão e campos personalizados, e eles podem suportar três tipos de valores: texto, numéricos ou de data e hora. Quando um campo de contato é criado, o valor padrão é nulo, a menos que o campo seja importado de uma planilha com um valor pré-existente ou atualizado quando um contato atinge uma ação de atualização de contato em um fluxo.
+Os campos padrão
+	Campos padrão são: o nome, endereços do contato e grupos.
+
+Adicionando campos
+	Campos de contato podem ser adicionados na guia contatos usando o método descrito abaixo, ou interagindo com um fluxo usando a atualização de contato.
+
+Para adicionar um campo de contato:
+1. Navegue até a guia contatos e clique no botão “Gerenciar Campos”;
+2. Digite o nome do campo de contato que você deseja adicionar em uma caixa vazia;
+3. Selecione o tipo do valor que este campo irá receber (texto, numérico, de data e hora).
+Depois de adicionar um campo de contato, você pode consultar o seu valor usando a variável @contact[nome do campo]. Por exemplo, o campo “idade” no tutorial abaixo pode ser referenciado usando @contact.idade.
+Atualizar valores de campo
+Para alterar o valor de um campo de um contato recém-criado, você pode atualizá-lo utilizando a atualização de contato pelo fluxo ou editando um valor no campo de contato por meio da guia contatos.
+Por exemplo, quando um novo número de telefone envia uma mensagem para um canal conectado à sua conta, um novo contato será criado com um valor Nome nulo e valores nulos para cada campo de contato que você adicionou. O novo contato só será identificável pelo seu número de telefone quando os outros valores de campo forem atualizados.
+ 
+ 
+
