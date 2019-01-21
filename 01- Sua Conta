@@ -1,0 +1,19 @@
+
+
+A aba Sua Conta localizada no lado superior direito da sua tela (colocar imagem) é o coração do seu IlhaPush. A partir daqui você poderá:
+
+Visualizar créditos remanescentes, ou comprar mais;
+Ver, adicionar ou excluir canais;
+Editar o nome da sua organização;
+Alterar seu fuso horário e formato de data / hora;
+Definir o seu idioma principal e adicionar idiomas que você deseja fornecer traduções;
+Configurar um webhook que se comunica com uma aplicação externa.
+Conferir seu endereço de E-mail.
+Inserir um país para habilitar o suporte de localização no fluxo.
+Definir o endereço de E-mail do qual serão enviados as mensagens para o E-mail dos clientes, caso seja solicitado no fluxo.
+Conectar com o Transfer To (plataforma de envio e recebimento de créditos).
+Conectar com chatbase (plataforma utilizada para monitorar o Bot).
+Conectar com Bothub (Plataforma para realizar o treinamento da inteligência artificial do Bot).
+Configurar eventos do fluxo.
+
+
