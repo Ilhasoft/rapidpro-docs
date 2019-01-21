@@ -1,0 +1,26 @@
+Os endereços de um contato são um tipo de campo de contato padrão como Nome e Grupos. Os endereços de contato podem ser adicionados, editados e priorizados a partir do atualizar contato diálogo acessado através da opção “Editar” nas configurações de cada perfil de contato:
+
+INSERIR IMAGEM
+
+O menu “Add Connection” fornece uma entrada para você adicionar conexões de todos os tipos. Apenas uma ligação pode ser adicionada por vez. As setas apontando para cima à direita dos campos de endereço são o que você vai usar para priorizar os endereços do contato. 
+O ilhapush do seu contato reconhece o endereço de nível superior como prioritário, que é um indicador importante para as mensagens de saída. Vamos supor que a sua conta tem número de telefone, canais do Twitter e Telegram conectados e você enviará uma mensagem para 3 contatos, cada um com uma prioridade de endereço diferente. 
+O canal que corresponde a prioridade de endereço de cada contato irá enviar-lhes a mensagem. Ou seja, você tem 3 canais de processamento de solicitação de mensagem de 1 de envio; seu canal Twitter vai enviar para aqueles com uma prioridade endereço de Twitter, o seu canal Telegram vai enviar para aqueles com uma prioridade endereço Telegram, e assim por diante. Caso contrário, o comportamento de prioridade de canal permanece o mesmo: prioridade de tipo de endereço de um contato irá ditar qual tipo de canal irá enviar mensagens para o contacto.
+
+INSERIR IMAGEM
+
+Se você tiver vários canais do mesmo tipo ligado a sua conta, o canal que o contato utilizou por último será priorizado. Contato será ligado a um relacionamento com um canal específico (eles só receberão mensagens deste canal), se cada uma das seguintes condições acontecer:
+Você tem vários canais do mesmo tipo ligado a sua conta.
+Prioridade do tipo de endereço do contato corresponde com o tipo de canal (por exemplo, número de telefone) que possui vários canais (por exemplo, vários números de telefone).
+O contato inicia o contato através de uma mensagem recebida.
+Usando um Contato Importado
+Os contatos podem ser importados com vários tipos de endereço, mas apenas com um endereço para cada tipo.
+
+INSERIR IMAGEM
+
+Você pode atualizar valores de campo de um contato, incluindo o campo de contato e seu valor na sua importação. Os endereços de contato são tipos de valores de campo padrão, podem ser adicionados, mas não substituído através de uma importação, desde que a coluna UUID contém o UUID(s) do contato(s). Contatos UUIDs podem ser obtidos através da exportação de seus contatos (UUIDs são incluídos em cada exportação contato) ou usando a consulta da lista de contatos no Explorador API. Basta entrar em sua conta, adicione os parâmetros apropriados para filtrar a seus contatos desejados (ou deixar em branco a consulta para listar todos os seus contatos), e clique no botão “GET”:
+
+INSERIR IMAGEM
+
+Ilhapush retornará todas as informações associadas com o seu contacto (s), incluindo o seu UUID(s).
+Substituindo Endereços
+Neste momento, os endereços de contato só podem ser substituídos através da API de contatos Endpoint ou pela página de perfil de um contato na situação mencionada acima.
