@@ -1,0 +1,33 @@
+Um contato é um usuário final que tem, ou vai interagir com sua conta no ilhapush. A comunicação com os contatos ocorre através de um canal. Um contato pode ser:
+Criado dentro da aba Contatos;
+Gerada automaticamente quando um novo número de telefone interage com a sua conta através de um canal;
+Ou importada para a sua conta através de uma spreadsheet XLS.
+Na guia Contatos, você pode:
+Ver, adicionar, editar ou remover atributos de contato.
+Organizar seus contatos em grupos.
+Visualizar o histórico de mensagens de cada contato e se ele tem algum agendamento de envio de mensage programado para ele.
+Adicionar, editar e priorizar os endereços
+“Campos” dos contatos
+A cada contato são atribuídos atributos que são chamados de campos de contato. Eles possuem valores como seus nomes, números de telefone e qualquer outra informação individual que você deseja incluir. Os campos dos contatos são divididos em dois tipos, campos padrões e campos personalizados, e eles podem receber três tipos de valores: texto, numéricos ou de data e hora.
+
+Campos Padrões
+Campos padrões incluem o nome, endereços do contato e grupos:
+
+INSERIR IMAGEM
+
+Endereços de contato: Cada contato tem um endereço, ou URN, para o qual as mensagens da conta são enviadas. Os endereços de contato são um tipo de campo padrão, como Nome e Grupos. Endereços representam as maneiras em que você pode se conectar com seus contatos. O tipo de endereço mais comum é um número de telefone, embora um contato também possa ter um identificador do Twitter, Telegram, endereço de email e qualquer identificador externo que você deseje adicionar. A cada contato pode-se atribuir vários endereços do mesmo tipo – ou seja, você pode atribuir vários números de telefone a um único contato. Endereços de um contato podem ser priorizados, para que eles sejam mostrados na página de perfil do contato na ordem em que foram priorizados:
+ 
+INSERIR IMAGEM
+
+Além disso, o endereço que for priorizado é o que será mostrado na página dos contatos.
+ 
+INSERIR IMAGEM
+
+Fazendo referência a um contato dentro de um fluxo
+Há duas maneiras de fazer referência a os campos dos seus contatos dentro de um fluxo:
+@contact – referência o contato que está recebendo a mensagem. Na maioria dos casos, este é um contato ativo – a pessoa cujas respostas estão sendo manipulados pelo fluxo. Ao usar o “Enviar uma mensagem a alguém”, @contact refere-se ao contato ou grupo de contatos para o qual a mensagem está sendo enviada.
+@Step.contact – referência o contato que enviou a última mensagem tratada pelo fluxo. Na maioria dos casos, este é também um contacto activo. Ao usar o “Enviar uma ação de resposta SMS”, @step.contact e @contact são o mesmo contato. Ao usar o “Enviar uma mensagem a alguém”, @step.contact refere-se ao contato que recebeu a mensagem ao “Enviar uma mensagem a alguém” dentro do fluxo, através de disparadores.
+
+INSERIR IMAGEM
+
+Como a mensagem criado pelo “Send a Message to Someone Else” foi encaminhada para Nelson IlhaSoft, @contact.first_name será substituído por Nelson. @step.contact.name e @step.contact.tel serão substituidos pelo nome e telefone do usuário que está precisando do suporte.
