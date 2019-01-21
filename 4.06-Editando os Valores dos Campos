@@ -1,0 +1,36 @@
+Editando os “campos padrão”
+	Campos padrão podem ser adicionados e editados manualmente através do diálogo “Atualizar Contato” localizado dentro de página de perfil de cada contato. Campos padrão incluem nome, grupos e endereços de um contato. Para acessar o “Atualizar Contato”, navegue para a página de perfil de um contato e selecione a opção “Editar” no menu de configurações.
+
+INSERIR IMAGEM
+
+	O menu “Add Connection” fornece uma entrada para você adicionar conexões de todos os tipos. Somente uma ligação pode ser adicionada por vez.
+	As setas apontando para cima à direita dos campos de endereço são as que você irá usar para priorizar os endereços. O ilhapush do seu contato reconhece o endereço de nível superior como prioridade, que é um indicador importante para as mensagens de saída. Vamos supor que a sua conta tem número de telefone, canais do Twitter e Telegram conectados e você enviar uma mensagem para 3 contatos, cada um com uma prioridade endereço diferente. O canal correspondente a prioridade de endereço de cada contato irá enviar-lhes a mensagem.
+
+INSERIR IMAGEM
+
+Você pode alterar o valor de um campo de contato por meio da guia contatos, ou adicionando a atualização através de um fluxo. Quando um novo endereço envia uma mensagem para um canal conectado à sua conta, um novo contato será criado com um valor de nome vazio e valores vazios para cada campo de contacto personalizado que você adicionou. O novo contato só será identificável pelo seu endereço até que seus outros valores de campo são atualizados.
+Edição de campos personalizados
+	Os campos personalizados, podem ser criados através do botão “Manage Fields” no separador contatos, podem ser editados através da caixa de diálogo campos personalizados, também localizada dentro de página de perfil de cada contato. Para acessar a caixa de diálogo personalizada, navegue para a página de perfil de um contato e selecione a opção “Os campos personalizados” no menu de configurações.
+
+INSERIR IMAGEM
+
+Os campos personalizados que você adicionou à sua conta será listado na caixa de diálogo, onde os valores individuais de cada contato aparece. Para editar esses valores, simplesmente substitua o valor antigo pelo que deseja e clique em “Ok”.
+
+INSERIR IMAGEM
+
+Edição dos valores de Data
+Note que ao adicionar manualmente um valor de data sem uma especificação de tempo para um campo de contato, o ilhapush irá substituir o valor de tempo correspondente com o momento em que você atualizou o campo.
+Usando um fluxo
+	Campos de contato também podem ser criados e editados por meio de um fluxo que contém uma ação de atualização de contato.
+
+Usando o importador de contatos
+Os contatos podem ser importados com vários tipos de endereço, mas apenas um endereço para cada tipo.
+
+INSERIR IMAGEM
+
+Você pode atualizar valores de campo de um contato, incluindo o campo de contato e seu valor na sua importação. Os endereços de contato são tipos de valores de campo padrão, podem ser adicionados, mas não substituído através de uma importação, desde que a coluna UUID contém o UUID(s) do contato(s). Contato UUIDs pode ser obtido através da exportação de seus contatos (UUIDs são incluídos em cada exportação contato) ou usando a consulta da lista de contatos no Explorador API. Basta entrar em sua conta, adicione os parâmetros apropriados para filtrar a seus contatos desejados (ou deixar em branco a consulta para listar todos os seus contatos), e clique no botão “GET”.
+
+INSERIR IMAGEM
+
+Substituindo Endereços
+Neste momento, os endereços de contato só podem ser substituídos através da API de contatos Endpoint ou pela página de perfil de um contato na situação mencionada acima.
