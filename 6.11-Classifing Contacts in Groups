@@ -1,0 +1,15 @@
+Adding contacts to a group
+Use the action “Add contact to a group” to add contacts to a group from a flow.
+
+INSERT A PRINT
+
+On the example below, we are adding the users who selected Alagoas as a State. This allows us to follow up the users who want to know more about Alagoas.
+
+Insert a Print
+
+Deleting Contacts from a Group
+Use the “Remove contact from a group” to remove a contact from a group on the flow.
+
+Insert a print
+
+On the example above, we are removing users from a group if they don't confirm is want to receive information.
