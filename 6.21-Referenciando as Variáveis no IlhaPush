@@ -1,0 +1,71 @@
+Variáveis de Contato
+
+Variáveis @contact representam valores de campo de contato específicos para cada contato presente em um fluxo.
+@contact – O nome completo do contato se houver, caso contrário, o seu número, por exemplo, “Ben Haggerty”.
+@Contact.name – Como acima, o nome completo do contato se houver, caso contrário, o seu número, por exemplo, “Ben Haggerty”.
+@Contact.first_name – O primeiro nome do contato, se for definido, caso contrário, o seu número, por exemplo, “Ben”.
+@Contact.tel – O número de telefone do contato em formato legível, por exemplo, “(206) 555 1212”.
+@Contact.tel_e164 – O número de telefone do contato em formato E164, por exemplo, “+12065551212”.
+@Contact.groups – Os grupos em que o contato tenha sido colocado.
+@Contact.uuid – O identificador exclusivo universalmente atribuído a cada contato.
+@contact [Contato-field] – Quaisquer campos de contato que você criou para seus contatos, por exemplo, “@Contact.idade”.
+
+INSERIR PRINT
+
+Variáveis de fluxo
+@flow variáveis referem-se a valores coletados em cada RuleSet dentro de um fluxo. @flow variáveis apenas informam os valores recolhidos pelo fluxo em que elas são chamadas. Isso permite que você se referir a valores previamente recolhidos ou campos de atualização de contato com um valor enviado por um contato.
+O nome da variável irá corresponder com o nome do resultado do conjunto de regras que as coletam:
+
+INSERIR PRINT
+
+Quando você digita @flow em uma etapa, um menu drop-down de que será preenchido automaticamente aparecerá listando as variáveis do corrente fluxo:
+
+INSERIR PRINT
+ 
+Por exemplo:
+No exemplo abaixo faremos um cadastro simples de um cliente com email, telefone e idade.
+
+INSERIR PRINT
+
+A RuleSet Wait for Telefone recolhe as respostas de “…Qual o seu telefone?” Send Message usando uma regra de resposta aberta e salva os valores resultantes para um campo de fluxo intitulado “Telefone”:
+
+INSERIR PRINT
+
+As respostas dos seus contatos podem ser referenciadas com @flow.”prefixo”, no caso do telefone poderemos usar @flow.telefone para salvar o telefone do contato em um novo campo chamado “Telefone”:
+
+INSERIR PRINT
+ 
+Aqui está uma lista de extensões que lhe dão o poder de filtrar as variáveis de fluxo dependendo de suas necessidades [nome da variável] é um espaço reservado para qualquer resultado presente em um fluxo):
+
+@flow – Todas as variáveis de fluxo recolhidas até este ponto, por exemplo, “Nome: Jane, Idade: 32”;
+@flow.[nome da variável] – O valor recolhido, por exemplo @flow.idade, “32”;
+@flow.[nome da variável].category - A categoria é avaliada para, por exemplo, “Válido”;
+@flow.[nome variável].text - O texto cru é avaliado dentro de um conjunto de regras, por exemplo, “A minha idade é 32”;
+@flow.[nome da variável].time - A data e hora em que um valor de fluxo foi recolhido, por exemplo, “02/04/2016 19:11:50” (dependente do seu formato de data/hora).
+
+Fazendo referência a um contato dentro de um fluxo
+	Há duas maneiras de fazer referência a os campos dos seus contatos dentro de um fluxo:
+
+@contact – referencia o contato que está recebendo a mensagem. Na maioria dos casos, este é um contato ativo – a pessoa cuja respostas estão sendo manipuladas pelo fluxo. Ao usar o “Enviar uma mensagem a alguém”, @contact refere-se ao contato ou grupo de contatos para o qual a mensagem está sendo enviada.
+
+@Step.contact – referência o contato que enviou a última mensagem tratada pelo fluxo. Na maioria dos casos, este é também um contacto ativo. Ao usar o “Enviar uma ação de resposta SMS”, @step.contact e @contact são o mesmo contato. Ao usar o “Enviar uma mensagem a alguém”, @step.contact refere-se ao contato que recebeu a mensagem ao “Enviar uma mensagem a alguém” dentro do fluxo, através de disparadores.
+
+Variáveis de Canais(@Channel)
+	Variáveis @channel referem-se ao canal através do qual uma mensagem é recebida. Por exemplo, se um contato envia uma mensagem por um canal Android conectado à sua conta, a variável @channel vai se referir a número atribuído ao cartão SIM do telefone.
+
+@channel – o número de telefone que recebeu a última mensagem do contato, em um formato legível, por exemplo, “(206) 555 1212”;
+@Channel.name – o nome do canal (que pode ser editado clicando um canal) ex: “Nexus 5”;
+@Channel.tel – o número de telefone que recebeu a última mensagem do contato, em um formato legível, por exemplo, “(206) 555 1212”;
+@Channel.tel_e164 – o formato E164 do número de telefone que recebeu a última mensagem de um contacto, por exemplo, “+12065551212”
+
+Variáveis de data
+	Variáveis @date referem-se a valores de hora no fuso horário que atribuiu a sua conta. Observe que o formato de variáveis @date são dependentes de suas configurações de formato de data.
+
+@Date – A data e hora atuais, por exemplo, “2014/02/05 20:08”
+@Date.now – A data e hora atuais, por exemplo, “2014/02/05 20:08”
+@Date.today – A data atual, por exemplo, “2014/02/05”
+@Date.tomorrow – A data de amanhã, por exemplo, “2015/03/05”
+@Date.yesterday – A data de ontem, por exemplo, “2014/01/05”
+
+Variáveis extras
+	@extra referencia variáveis extraídas de uma aplicação externa através de um webhook, ou, se o fluxo é iniciado por um Start Another Flow action, as variáveis de fluxo associadas com o funcionamento do contato no fluxo anterior, por exemplo, @Extra.flow.response_1. Se Start Someone Else in a Flow Action for utilizado para iniciar o fluxo, @extra também pode ser usado para fazer referência a campos do contato anterior (como variáveis @step).
