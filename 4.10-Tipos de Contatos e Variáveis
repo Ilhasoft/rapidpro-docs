@@ -1,0 +1,19 @@
+Tipos de canais e tipos de endereços de contato
+
+INSERIR IMAGEM
+
+A tabela acima mapeia cada tipo de canal com seu tipo de endereço de contato correspondente. Cada contato pode ter vários endereços do mesmo tipo (por exemplo, múltiplos números de telefone). A prioridade do tipo de endereço de um contato que irá ditar qual tipo de canal irá enviar mensagens para o contacto. Se você tiver vários canais do mesmo tipo ligado a sua conta, o último canal a ter um contato iniciado será priorizado. Os contatos podem ser ligados a um relacionamento com um canal específico (eles só receberam mensagens deste canal) sob três condições:
+Você tem vários canais do mesmo tipo ligado a sua conta.
+A prioridade do tipo de endereço do contato corresponde com o tipo de canal (por exemplo, número de telefone) que possuem múltiplos canais (por exemplo, vários números de telefone).
+O contato iniciou o contato através de uma mensagem recebida.
+Variáveis de contacto: Variáveis @contact representam valores de campo de contato específicos para cada contato presente em um fluxo.
+@contact – O nome completo do contato se houver, caso contrário, o seu número, por exemplo, “Ben Haggerty”.
+@Contact.name – Como acima, o nome completo do contato se houver, caso contrário, o seu número, por exemplo, “Ben Haggerty”.
+@Contact.first_name – O primeiro nome do contato, se for definido, caso contrário, o seu número, por exemplo, “Ben”.
+@Contact.tel – O número de telefone do contato em formato legível, por exemplo, “(206) 555 1212”
+@Contact.tel_e164 – O número de telefone do contato em formato E164, por exemplo, “+12065551212”.
+@Contact.groups – Os grupos em que o contato tenha sido colocado.
+@Contact.uuid – O identificador exclusivo universalmente atribuído a cada contato.
+@contact [Contato-field] – quaisquer campos de contato que você criou para seus contatos, por exemplo, “@Contact.idade”
+
+INSERIR IMAGEM
