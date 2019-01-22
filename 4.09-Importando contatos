@@ -1,0 +1,35 @@
+A importação de contatos permite que você adicione grupos inteiros de contatos para o ilhapush usando um XLS simples (MS Excel) planilha.
+Os seus contatos serão colocados em um novo grupo de contacto que corresponda ao nome do arquivo de planilha importados. Note que você deve ter um canal conectado à sua conta para importar contatos. Para importar contatos, simplesmente importe uma planilha XLS contendo: 
+Colunas de endereço correspondentes aos endereços de cada contato e podendo conter (a coluna de telefone que contém o número de telefone de cada contato em formato E164, e/ou uma coluna Telegram contendo identificador do Telegram de cada contato, e/ou uma coluna Twitter contendo o identificador do Twitter de cada contato, e/ou uma coluna de e-mail que contém o endereço de e-mail de cada contato). Uma vez importado, o ilhapush irá exibir números de telefone dos seus contatos sem o prefixo do código de país.
+A coluna Nome que contém o nome e sobrenome de cada contato.
+(Condicional) Uma coluna UUID contendo o identificador universalmente exclusivo para cada contato que você importar. Esta coluna pode substituir a coluna Nome, e é necessária para importar uma planilha com a intenção de adicionar um novo endereço ou tipo de endereço para seus contatos.
+(Opcional) A coluna Idioma representando idioma preferido dos contatos que contém o ISO 639-2 / nomenclatura padronizada B para classificar as línguas que você está incluindo.
+(Opcional) Qualquer número de colunas adicionais correspondentes com atributos personalizados *(campos de contato) contendo os valores dos campos de contato. Observe que os nomes de coluna são limitados a 36 caracteres e não suportam caracteres especiais.
+* Observe que, quando a importação de um valor de data no ilhapush está sem um valor de tempo, o ilhapush irá atribuir um valor de tempo de 00:00. Além disso, ao adicionar manualmente apenas um valor de data a um campo de contato, o ilhapush irá substituir o valor de tempo correspondente com o momento em que você atualizou o campo.
+
+INSERIR IMAGEM
+
+Para importar contatos:
+1- Navegue até a guia contatos;
+2- Clique no botão “Importar contatos”.
+
+INSERIR IMAGEM
+
+3- Faça o download e edite o modelo que fornecemos (ou escolher um do seu próprio arquivo) e enviá-lo usando o botão “Escolher arquivo”.
+4- Confirmar todos os campos personalizados presentes na sua folha de cálculo de importação e escolher o tipo de valor de cada campo: Texto, Numérico ou Data e Hora. Certifique-se de verificar a(s) caixa(s) correspondente aos campos que deseja importar:
+
+INSERIR IMAGEM
+
+Importação de tipos de endereços
+Os contatos podem ser importados com vários tipos de endereço, mas apenas um endereço para cada tipo:
+ 
+INSERIR IMAGEM
+
+Endereços de contacto podem ser adicionados por meio de uma importação, desde que a coluna UUID  contenha o UUID(s) de contato(s). O UUIDs pode ser obtido através da exportação de seus contatos ou usando a lista de contatos no Explorador API:
+
+INSERIR IMAGEM
+
+Exportando contatos
+Contatos exportados conteram as UUIDs dos seus contatos, nomes, endereços, e campos personalizados. Para exportar seus contatos, basta navegar até a guia de contato e selecione a opção “Exportar” no menu do ícone de configurações:
+
+INSERIR IMAGEM
