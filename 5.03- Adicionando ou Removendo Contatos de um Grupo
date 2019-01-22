@@ -1,0 +1,10 @@
+Para adicionar um contato a um grupo através da aba contatos:
+Vá até a aba “contatos”, marque a caixa à esquerda do contato que você gostaria de colocar em um grupo, em seguida, clique no ícone do grupo que aparece acima de seus contatos para selecionar um grupo ou criar um novo.
+Usando um fluxo
+Você pode adicionar um contato a um grupo ou removê-lo com uma ação no fluxo de “Adicionar contato em um grupo” ou “Remover contato de um grupo”. No exemplo abaixo, estamos usando uma ação “Split by Contact Field” para direcionar os contatos que residem no estado de Alagoas a o grupo “Alagoas”.
+
+INSERIR IMAGEM
+
+Nós conseguimos isso dividindo nossos contatos pela opção “State”. A opção “has any of these words” nos permite criar uma regra que coloca contatos cujo campo “Estado” contém qualquer uma das palavras “Maceió”, “Arapiraca”, “Maragogi”, etc. na categoria “Alagoas”, o que leva à ação Adicione à grupos (Add to Groups) acima.
+
+INSERIR IMAGEM
