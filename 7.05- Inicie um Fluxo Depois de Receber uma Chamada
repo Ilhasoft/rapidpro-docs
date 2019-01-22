@@ -1,0 +1,11 @@
+Utilize este disparador para iniciar um fluxo quando uma chamada for recebida. Para Iniciar um fluxo quando uma mensagem for recebida:
+
+1. Vá até a aba “Disparadores” e clique na caixa “Criar disparador”.
+
+2. Clique no botão “Iniciar um fluxo depois de receber uma chamada”.
+
+3. Em “Flow”, será escolhido qual fluxo irá iniciar.
+
+4. Em “Only Groups” será selecionado o(s) grupo(s) em que o disparador será aplicado, se o campo for deixado em branco, o disparador será aplicado para todos os grupos.
+
+5. Click em “Create Trigger”.
