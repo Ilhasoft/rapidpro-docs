@@ -1,0 +1,10 @@
+Use esta ação para exportar fluxos do ilhapush. Você pode exportar um fluxo para compartilhar com outras contas, ou para salvar uma versão específica do seu fluxo para uso posterior.
+Para exportar um fluxo:
+1. Navegue até a guia fluxos.
+2. Clique no fluxo você deseja exportar.
+3. Uma vez no editor de fluxo, clique no ícone de configuração.
+ 
+INSERIR UM PRINT
+
+4. Selecione a opção “Exportar” no menu drop-down da configuração.
+5. Um arquivo JSON vai começar a baixar no seu browser.
