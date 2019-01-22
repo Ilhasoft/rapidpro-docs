@@ -1,0 +1,30 @@
+Quando um campo de contato é criado o valor padrão é nulo a menos que o campo seja importado com um valor pré-existente. Para alterar o valor de um campo de contato recém-criado, você pode atualizá-lo usando esta ação ou editando um valor campo de contato por meio da guia contatos. Por exemplo, quando um novo número de telefone envia uma mensagem para um canal conectado à sua conta, um novo contato será criado com um valor Nome nulo e valores nulos para cada campo de contato que você adicionou. O novo contato só será identificável pelo seu número de telefone até que seus outros valores de campo sejam atualizados.
+
+Use a Atualização da ação de contato para:
+
+Criar um novo campo de contato e atualizar o seu valor para cada contato que atingir esta ação;
+Atualizar o valor de um campo de contato existente para cada contato que atingir esta ação.
+
+Variáveis e expressões
+
+Os campos de contato podem ser atualizados com um valor fixo, expressões ou variáveis:
+
+
+@flow – é a variável atribuída ao resultado de cada conjunto de regras(RuleSet). Pode também incluir .Text (por exemplo @flow.response_1.text, o texto completo da mensagem de entrada enviada pelo contato), .Mapa (por exemplo @flow.response_1.category, a categoria através do qual a mensagem foi enviada) ou .time (por exemplo, @flow.response_1.time, a hora em que a mensagem de entrada foi recebida).
+@date – usado para chamar valores de data (@date.now, @date.yesterday, @date.today, @date.tomorrow)
+@channel – o canal que lidou com a mensagem recebida (@channel.name, @channel.tel, @channel.tel_e164).
+@step – o contato que enviou a última mensagem tratada pelo fluxo. Na maioria dos casos, este é também o contato ativo (@step.value)
+@extra – referências extraídas de uma aplicação externa através de um webhook, ou, se o fluxo é iniciado por um “Start Another Flow”, as variáveis de fluxo associados com o funcionamento do contato no fluxo anterior, por exemplo, @Extra.flow.response_1.
+Uma expressão, exemplo @(HOUR (NOW ())).
+
+
+Criando um novo Contacto Campo
+
+Para criar um novo campo de contato usando o “Update the contact” de contato, basta digitar o nome do campo que deseja adicionar no campo. Em seguida, insira o valor do campo que você gostaria de dar contatos que alcançam esta etapa no fluxo (sob a forma de um valor, variável ou expressão fixa). No exemplo abaixo, estamos criando um campo City e atualizando esse valor com Maceió, um valor fixo para os contatos que atingem esta etapa no fluxo:
+
+INSERIR PRINT
+
+A atualização de um existente Contacto Campo
+No exemplo abaixo, estamos atualizando o campo Estado para os contatos que tenham indicado que querem saber sobre Alagoas usando @flow.estado, uma variável coletada no início do fluxo:
+
+INSERIR PRINT
