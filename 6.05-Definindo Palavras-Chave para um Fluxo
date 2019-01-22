@@ -1,0 +1,13 @@
+Você pode atribuir palavra-chave(s) para um fluxo para permitir que seus contatos iniciem o fluxo a seu critério. A palavra-chave é a primeira palavra em uma mensagem recebida.
+Para atribuir uma palavra-chave para um fluxo:
+1- Navegue até a guia “fluxo” e escolha um fluxo.
+2- Selecione “Editar” no ícone de configuração na parte superior direita do editor de fluxo.
+
+INSERIR PRINT
+
+3-  Adicione uma(s) palavra-chave(s). Note que essa opção não é case sensitive (não diferencia letras maiusculas de minusculas), por exemplo, Registro e registro serão tratados da mesma forma.
+
+INSERIR PRINT
+
+Ignorar disparadores
+Você pode marcar a caixa “Ignorar disparadores” para impedir que seus contatos iniciem outros fluxos enquanto ativo no fluxo que você está editando. Quando esta caixa está marcada, um contato não pode entrar em um novo fluxo se enviar uma palavra-chave atribuída a um fluxo diferente.
