@@ -1,0 +1,13 @@
+Utilize este disparador para iniciar um fluxo depois de receber uma mensagem de uncaught (a mensagem não é tratada por nenhum dos seus outros disparadores). Nós nos referimos a isso como o disparador “pega-tudo”, como ele pode ser usado para mensagens não capturadas para um fluxo informativo que explica o seu serviço e dirige o contato para o fluxo.
+
+Para criar um “pega-tudo”:
+
+1. Vá até a aba “Disparadores” e clique na caixa “Criar disparador”.
+
+2. Clique no botão “Iniciar um fluxo após detectar uma mensagem não tratada em outro local.”.
+
+3. Em “Flow”, Escolha o fluxo que deseja iniciar.
+
+4. Em “Only Groups” será selecionado o(s) grupo(s) em que o disparador será aplicado, se o campo for deixado em branco, o disparador será aplicado para todos os grupos.
+
+4. Clique na caixa “Criar disparador”.
