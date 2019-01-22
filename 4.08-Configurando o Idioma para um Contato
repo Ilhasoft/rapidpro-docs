@@ -1,0 +1,16 @@
+O Ilhapush permite definir cada uma das preferências de idioma dos seus contactos. Uma vez definido, estas serão as línguas em que seus contatos recebem as mensagens.
+Aba de contatos
+Para definir as preferências de idioma de um contato através da aba de “contatos”:
+1. Vá até a aba “contatos”, em seguida, clique no contato cujo idioma você deseja atualizar;
+2. Clique no ícone de engrenagem e selecione a opção “Editar”.
+3. A caixa de “Atualizar Contato” irá aparecer. Clique no menu “Linguagem” para selecionar um idioma entre os idiomas primários e secundários que você adicionou à sua conta, clique em “Salvar Alterações”.
+
+INSERIR IMAGEM
+
+Observe que: 
+1- O campo padrão Linguagem do contato que representa o idioma preferido é visível através do seguinte percurso: navegue para a guia contatos> clique em contato> clique no ícone da engrenagem> selecione Editar. A preferência de idioma também pode ser referenciada usando a variável @contact.linguagem, retornando a sua ISO 639-2 / B nomenclatura padronizada (espanhol torna-se ‘spa’).
+2- Você vai precisar traduzir seus fluxos em cada um dos idiomas secundários que foram adicionados à página da sua conta.
+Usando um fluxo
+Você pode conseguir o mesmo resultado em grande escala criando um fluxo que contenha a ação Definir Idioma, em seguida, adicionar os contatos ou grupos cujas              preferências de idioma que você deseja modificar.
+Usando um contato importado
+Você pode adicionar uma coluna intitulada “Idioma” contendo o código de idioma 639-2 / B ISO (por exemplo, ‘spa’ em espanhol) para uma importação de contato para definir idiomas preferidos do seu contato. Note que todos os idiomas adicionais devem primeiro ser adicionado à sua conta através da página da conta.
