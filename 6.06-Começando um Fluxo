@@ -1,0 +1,18 @@
+Para que seus contatos possam interagir com um fluxo, ele deve ser iniciado. Um fluxo pode ser iniciado de muitas maneiras:
+Você pode iniciar manualmente um fluxo a qualquer momento através da caixa “Começar fluxo” no editor de fluxo.
+Seus contatos podem iniciar um fluxo através do envio de uma palavra-chave.
+Um fluxo pode ser acionado em uma data futura ou em um agendamento.
+Um fluxo pode ser disparado por um evento de campanha.
+Um fluxo pode ser desencadeada depois de perder uma chamada.
+Um fluxo pode ser desencadeada depois de receber uma chamada.
+Um fluxo pode ser disparado após ter recebido uma mensagem não tratada em outro lugar.
+
+Para iniciar um fluxo para um contato ou grupo através do editor de fluxo:
+1- Navegue até a guia “fluxo” e clique no fluxo você deseja iniciar.
+2- Clique no botão “Começar fluxo” na parte superior direita do editor de fluxo.
+
+INSERIR IMAGEM
+
+3- Insira os contatos ou grupos que você deseja iniciar o fluxo, em seguida, clique no botão “Ok”.
+
+INSERIR IMAGEM
