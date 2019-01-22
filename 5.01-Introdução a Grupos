@@ -1,0 +1,3 @@
+Grupos de contatos permitem que você segmente seus contatos em grupos com base em seus atributos ou respostas. Os contatos podem ser colocados em vários grupos, e você pode criar quantos você precisar.
+
+Dentro de um fluxo, os contatos podem ser movidos de e para grupos usando o Adicionar um contacto a um grupo e Remover contato de um grupo como será explicado com mais detalhes aqui. Grupos de contatos podem ser referenciados usando a variável @contact.groups.
