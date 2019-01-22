@@ -1,0 +1,16 @@
+Quando um contato envia uma mensagem que corresponde a uma palavra-chave que você tenha definido para iniciar um fluxo, que será automaticamente colocado no seu interior por padrão. Isto significa que se um contato foi colocado dentro de um fluxo A e respondeu com uma mensagem que contém uma palavra-chave que começa o fluxo B, ele vai deixar o fluxo de A para o fluxo de B. Isto é útil em situações em que você deseja permitir que seus contatos se movimentam entre os fluxos à vontade usando palavras-chave.
+Se você quiser manter seus contatos em um fluxo até que eles tenham completado ou expirem, você pode configurá-lo para ignorar palavra-chave até que seus contatos tenham deixado o primeiro fluxo.
+
+Para dizer a um fluxo que deve ignorar disparadores de palavras-chave:
+
+1. Navegue até a guia “flui” e clique no fluxo que você gostaria de modificar.
+
+2. Clique no ícone de engrenagem no canto superior direito do editor de fluxo, em seguida, clique na opção “Editar”.
+
+INSERIR PRINT
+
+3. Selecione a caixa “Ignorar disparadores por palavra-chave enquanto estiver neste fluxo”.
+
+INSERIR PRINT
+
+4. Por fim clique em Salvar alterações.
