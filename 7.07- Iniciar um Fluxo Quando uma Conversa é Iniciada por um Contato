@@ -1,0 +1,11 @@
+Utilize este disparador para iniciar um fluxo quando uma conversa é iniciada por um contato. Para Iniciar um fluxo quando uma conversa é iniciada por um contato:
+
+1. Vá até a aba “Disparadores” e clique na caixa “Criar disparador”.
+
+2. Clique no botão “Iniciar um fluxo quando uma conversa é iniciada por um contato”.
+
+3. Em “Channel”, será escolhido o canal associado.
+
+4. Em “Flow”, será escolhido qual fluxo irá iniciar.
+
+5. Click em “Create Trigger”.
