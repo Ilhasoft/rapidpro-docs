@@ -1,0 +1,50 @@
+Use Start someone else in a flow para colocar um contato ou grupo separado em um fluxo quando um contato atingir esta etapa. No exemplo abaixo, estamos chamando o contato Suporte para quando o usuário chegar a esse ponto.
+
+Inserir um Print
+
+Criando um novo contato
+	
+Esta ação também pode ser utilizada para criar um novo contacto com o fluxo.
+No exemplo de fluxo abaixo, Registro de Paciente, os contatos estão sendo convidados a apresentar os nomes e números de telefone do paciente que eles estão registrando. Uma vez que a informação é recolhida, o Start someone else in a flow desencadeia um novo fluxo, Criar Novo paciente, que irá criar um contato cujo campos padrão, nome e telefone, são preenchidos usando uma atualização do contato com as variáveis de fluxo (@flow.name & @flow.phone) coletadas no fluxo anterior, Registro de paciente.
+O primeiro fluxo coleta informações do paciente, enquanto o segundo fluxo atualiza e cria um perfil de contato para o paciente.
+
+INSERIR UM PRINT
+
+O nome e número de telefone do novo contato é coletado, então o número de telefone do novo contato é enviado a “Criando Contatos”.
+
+INSERIR UM PRINT
+
+Uma vez que o número de telefone do contacto começa o fluxo “Criando Contato”, ele vai ser adicionado ao seu guia contato. Você só vai precisar atualizar seu campo Nome completo para completar seu perfil. Você pode fazer isso usando uma atualização da ação do contato que coloca o nome coletado no fluxo anterior (referenciado usando a variável @extra.flow.name; todas as variáveis do fluxo anterior podem ser chamadas colocando ” @extra “na frente do nome da variável) no campo nome completo do novo contato.
+
+INSERIR UM PRINT
+
+Usando @new_contact
+Digamos que você gostaria que único contato – uma mãe de grávida, por exemplo – recebesse lembretes relacionados com a gravidez, bem como lembretes relacionados à assistência médica de seus outros filhos. A chave é criar perfis separados para cada criança, todos contendo o número de telefone da mãe, para que ela possa receber eventos de campanha para cada um de seus filhos.
+
+Criando Contatos adicionais
+Primeiro, você precisa ter a mãe em um fluxo que recolhe informações relevantes sobre cada criança, de modo que cada execução de fluxo resultará na criação de uma nova criança.
+
+INSERIR UM PRINT
+
+Depois de recolher informações relevantes sobre a criança, você vai usar @new_contact para criar um espaço reservado para o perfil de contato dessa criança, e Start Someone in a Flow que irá atualizar os valores.
+
+INSERIR UM PRINT
+
+Atualizando Perfil de Usuário
+
+O próximo fluxo conterá uma série de atualização de contatos que irá atualizar os valores recolhidos pelo fluxo anterior (nome, sexo, idade) para o espaço reservado da criança, @new_contact:
+
+INSERIR UM PRINT
+
+Em primeiro lugar, você deverá criar um campo de contacto para a criança que irá conter o número de telefone da mãe (você pode criar novos campos de contato dentro do Atualizar contato). Então, você vai preencher esse campo com o número de telefone da mãe usando a variável @step.contact.tel_e164. @Step.contact refere-se à mãe – o contato que enviou a mensagem anterior:
+
+INSERIR UM PRINT
+ 
+Depois, você irá colocar a variável @extra na frente de cada um dos valores recolhidos a partir do fluxo anterior:
+
+INSERIR UM PRINT
+
+Uma vez que o perfil de contato de cada filho é criado, é possível atribuir-lhes a sua própria campanha.
+
+Enviando lembretes destinados à Criança
+Para enviar lembretes para a mãe sobre o seu filho, você vai precisar para criar um evento de campanha que será enviado para o perfil de contato do filho que contém um Send a Message to Someone Else ou Start Someone Else in a Flow para enviar uma mensagem para a mãe. O endereço que você vai usar é o campo de contato que contém o número de telefone da mãe, @contact.mother_phone:
