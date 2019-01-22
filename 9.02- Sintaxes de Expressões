@@ -1,0 +1,29 @@
+As sintaxes de expressões são modeladas como é utilizado para fórmulas em Microsoft Excel™, apesar de todas as expressões começarem com um símbolo “@”. Uma vez inscrito, o símbolo “@” irá desencadear um diálogo de conclusão que lista e explica cada função.
+
+INSERIR IMAGEM
+ 
+Sintaxes simples: São usadas para chamar valores únicos, por exemplo.:
+
+Olá @contact, você acessou o @flow.suporte, está correto?
+
+A expressão também pode ser uma chamada funcional, por exemplo:
+
+Olá @(UPPER(contact.first_name))
+
+Nomes funcionais não reconhecem caixa alta ou baixo. No exemplo acima a chamada UPPER irá retornar o nome do contato em caixa alta.
+
+
+IlhaPush reconhece várias funções do Excel, vamos listá-las abaixo.
+Sintaxes Avançadas: São usadas para construir expressões mais complexas usando sintaxe semelhante à fórmula do Excel, por exemplo:
+
+Olá @(PROPER(contact)), Você tem @(YEAR(NOW()) - flow.year_born) de idade. Está correto?
+
+Expressões também podem incluir a cálculo aritmético com a soma (+), subtração (-), multiplicação (*), divisão (/) e exponencial (^):
+
+Resultado é @(1 + (1-3) * 4 / 5ˆ6).
+
+Note que a expressão está entre parênteses para dizer ao  IlhaPush onde termina.
+
+Você também pode participar de cordas com o operador de concatenação (join) (&), por exemplo:
+
+Olá @(contact.first_name & " " & contact.last_name).
