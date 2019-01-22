@@ -1,0 +1,9 @@
+Utilize este disparador para iniciar um fluxo quando uma chamada for perdida. Para Iniciar um fluxo quando uma mensagem for perdida:
+
+1. Vá até a aba “Disparadores” e clique na caixa “Criar disparador”.
+
+2. Clique no botão “Iniciar um fluxo depois de perder uma chamada”.
+
+3. Em “Flow”, será escolhido qual fluxo irá iniciar.
+
+4. Click em “Create Trigger”.
