@@ -1,0 +1,11 @@
+Utilize este disparador para adicionar contatos a um grupo. Esse disparador é útil para gerenciar contatos que querem se descadastrar usando palavras-chave como “parar” ou “desinscrever”.
+Para criar um disparador com uma palavra-chave que adiciona contatos a um grupo:
+
+1. Vá até a aba “disparadores”, clique na caixa “Criar disparador”;
+2. Clique no botão “Criar uma palavra chave de mensagem que permite pessoas a participar de um grupo”;
+3. Introduza a palavra-chave em Join a Keyword;
+4. Escolha o grupo que você gostaria de adicionar seus contatos em Group to Join.
+5. Opcional: Em Response você também pode escolher enviar uma mensagem.
+6. Em Flow você pode escolher qual fluxo será iniciado
+
+INSERIR PRINT
