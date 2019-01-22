@@ -1,0 +1,11 @@
+Use this action to export Ilhapush Flows. You can export a flow to share with other accounts or to save a specific version of your flow to use in the future.
+
+To export a flow:
+1. Go to the flows guide;
+2. Click on the flow that you want to export;
+3. Click on the configuration.
+
+INSERT A PRINT
+
+4. Select the option “Export” on the Configure drop-down menu.
+5. A JSON file will be downloaded on your browser.
