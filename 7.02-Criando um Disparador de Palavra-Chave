@@ -1,0 +1,23 @@
+A palavra-chave é a primeira palavra em uma mensagem, e pode ser usada para iniciar um fluxo. Por exemplo, você pode definir um disparador usando a palavra-chave “entrar” para iniciar um fluxo de registrar contatos para o seu serviço.
+
+Para criar um novo disparados palavra-chave:
+
+1. Vá até a aba “disparadores”, clique na caixa “Criar disparador”.
+
+INSERIR IMAGEM
+
+2. Clique no botão “Criar uma palavra-chave de mensagem que inicia um fluxo.”.
+
+INSERIR IMAGEM
+
+3. Em “keyword” você definirá uma palavra para funcionar como palavra-chave;
+
+4. Em “trigger when” , você irá escolher entre duas opções:
+Message starts with the keyword: Se a frase digitada pelo usuário iniciar com a palavra-chave, será disparado o fluxo escolhido;
+Message contains only the keyword: O fluxo escolhido será disparado, somente se o usuário digitar apenas a keyword;
+
+5. Em “Flow”, é definido o fluxo que irá iniciar quando for utilizada a keyword;
+
+6. Em “Only groups”, é possível aplicar as regras dessa trigger somente à grupos de contatos específicos, basta deixá-la em branco caso queira aplicar essa regra a todos os usuários.
+
+7. Clique na caixa “Criar disparador”.
