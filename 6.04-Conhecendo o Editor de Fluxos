@@ -1,0 +1,57 @@
+
+INSERIR IMAGEM
+
+Anatomia do editor de fluxo
+1. Nome
+O nome que você deu ao fluxo quando o criou.
+2. Criar mensagem “Create Message”
+Este botão abre o editor de etapas, que compreende dois diálogos distintos: o diálogo de ação (Send Message) e o diálogo “dividida” (Wait for response). Em geral, recomendamos iniciar um fluxo com uma ação Enviar mensagem, mas você pode encontrar um conjunto de regras mais apropriado.
+Editor de ações
+O editor ação começa com uma ação Enviar mensagem, embora você possa clicar no menu drop-down para alternar entre os vários diálogos de ações. Para acessar o editor de divisão, clique no ícone de ramificação no canto superior direito do editor de ação.
+ 
+INSERIR IMAGEM
+
+Editor de divisão
+O editor de divisão permite que você crie pontos de articulação em seu fluxo na forma de declarações condicionais. Como explicamos em nosso artigo introdutório, o Editor de Regras é composto de:
+Um tipo de valor – “Quando alguém chega a este ponto em seu fluxo …”
+Regras de respostas que avaliam o tipo de valor selecionado – “Se a mensagem de resposta…”
+Os valores específicos que você está avaliando para.
+As categorias em que os valores que correspondem a uma regra de resposta são colocados.
+O nome dado à variável resultante.
+ 
+3. Simulator
+O simulador é uma ferramenta de teste prático nós adicionamos para que você possa testar seus fluxos a partir da perspectiva de um usuário final como você construir-los. Uma vez clicado, o simulador irá iniciar a primeira etapa do seu fluxo.
+
+4. Menu Configurações
+APROFUNDAR SOBRE MENU CONFIGURAÇÕES
+
+Resultados
+Clique na opção de resultados para ver os resultados ligados ao fluxo que você está editando.
+
+Editar
+Clique na opção de edição para:
+1. Alterar o nome do fluxo;
+2. Atribuir gatilhos para o fluxo;
+3. Ajustar a janela de expiração do fluxo;
+4. Definir que o fluxo ignore disparadores, uma vez que o contato tenha entrado no fluxo.
+ 
+INSERIR IMAGEM
+ 
+Copiar
+Clique nessa opção para fazer uma cópia idêntica do fluxo que você está editando.
+
+Exportar
+Clique nesta opção para exportar o fluxo que você está editando como um arquivo JSON.
+
+Histórico de Revisão
+Clique nesta opção para visualizar o histórico de revisão do fluxo que você está editando. Clique em uma revisão para ver a versão do fluxo, ou retornar a aquele ponto.
+
+INSERIR IMAGEM
+
+Excluir
+Clique nesta opção para excluir o fluxo que você está editando.
+
+5. Começar Fluxo
+Clique nesse botão para colocar contatos no fluxo. Você pode adicionar contatos específicos ou vários grupos. Selecione a caixa  “Reiniciar qualquer um dos contatos acima que já participam deste fluxo” caso queira reiniciar contatos que já são membros ativos do fluxo.
+
+INSERIR IMAGEM
