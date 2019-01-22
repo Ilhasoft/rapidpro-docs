@@ -1,0 +1,20 @@
+Por padrão, um fluxo contendo RuleSets contém uma coleção de variáveis resultantes de cada avaliação RuleSet. Por exemplo, o RuleSet abaixo irá produzir o fluxo variável @flow.telefone quando um contato responder e passar através dele para a próxima etapa.
+
+INSERIR PRINT
+ 
+Cada variável começa com o símbolo “@”, o que desencadeia um menu drop-down de preenchimento automático que contém uma lista completa das variáveis disponíveis:
+
+INSERIR PRINT
+
+Depois de selecionar um tipo de variável, pressione “enter” e será mostrada uma lista de variáveis disponíveis dentro de cada tipo de variável. No exemplo abaixo, digitando @flow e pressionando “Enter” aparecerá uma lista de valores de fluxo colhidas no âmbito do fluxo corrente de cada RuleSet:
+
+INSERIR PRINT
+ 
+Pressionando “Enter” novamente irá permitir você especificar metadados que o ilhapush associa a cada valor. No exemplo que se segue:
+Category retorna a categoria em que a resposta de um contato foi colocado;
+Text retorna o texto completo da resposta de um contato;
+Time retorna a hora em que a resposta do contato foi recebido pelo seu canal.
+
+INSERIR PRINT
+
+Cada variável é substituída com o valor representado quando um contato está ativo em um fluxo. Se você inserir uma variável inválida, a mensagem em vez disso, conterá o nome da variável.
