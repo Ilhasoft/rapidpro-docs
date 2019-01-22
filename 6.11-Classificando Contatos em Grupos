@@ -1,0 +1,13 @@
+Adicionando contatos a um grupo
+Use a ação “Add contact to a group” para adicionar contatos a um grupo a partir de um fluxo.
+
+No exemplo abaixo estamos adicionando os usuários que selecionaram Alagoas como estado. Isso nos permite acompanhar os usuários que desejam saber mais sobre Alagoas.
+
+INSERIR Print
+
+Removendo contatos de Grupos
+Use o “Remove contact from a group” para remover um contato de um grupo a partir de um fluxo.
+
+INSERIR Print
+
+No exemplo acima, estamos removendo usuários do grupo caso não confirmem que queiram receber informações.
