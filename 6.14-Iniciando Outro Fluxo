@@ -1,0 +1,13 @@
+Use o Start another flow para mover seus contatos de um fluxo para outro a partir de um fluxo. Uma vez que um contato passa através deste passo, que irá fazer com que o contato seja removido do fluxo corrente e começar outro.
+
+No exemplo abaixo, estamos direcionando os contatos de acordo com o tipo de suporte que eles estejam precisando.
+
+INSERIR UM PRINT
+
+Variáveis @extra
+Quando um Start another flow é colocado dentro de um fluxo, todas as variáveis de fluxo criadas até aquela etapa possa ser passadas para o próximo fluxo. Dentro do novo fluxo, variáveis coletadas no fluxo anterior são referenciadas usando o prefixo @extra.
+Por exemplo, se você coletar a Idade de um contato (@flow.idade) e Localização (@flow.localizacao) em um fluxo A, em seguida, usar o Start another flow para o mover o contato para um novo fluxo, o fluxo B, você pode referenciar as variáveis coletadas anteriormente chamando @extra.flow.idade e @extra.flow.localizacao:
+
+INSERIR UM PRINT
+
+Note que @extra variáveis só são capazes de fazer referência a valores de um fluxo anterior, quando um contacto inicia um fluxo, através de um Start Another Flow ou Start Somebody Else em um fluxo.
