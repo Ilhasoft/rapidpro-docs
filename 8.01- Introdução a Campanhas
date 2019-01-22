@@ -1,0 +1,17 @@
+Campanhas permitem agendar mensagens e fluxos  em torno de uma data específica, como um registo ou data de compra. Campanhas são muitas vezes utilizadas para comunicação por gotejamento*, tais como lembretes de maternidade de saúde, mensagens de terapia de aderência, ou mensagens que correspondem ao ciclo de vida de um produto ou serviço.
+O timing das mensagens seguem um curso pré-determinado.
+As mensagens são enviadas com um padrão definido, a um comportamento específico ou o estado do destinatário.
+Mensagens “pingadas” ou fluxos são iniciados por eventos de campanha, que compreendem uma campanha. Cada campanha pode conter quantos eventos você achar necessário.
+* Comunicação por gotejamento é uma estratégia de comunicação que envia, ou “pinga”, um conjunto pré-escrito de mensagens para clientes ou clientes em potencial ao longo do tempo. Cada um dos seguintes é um modelo de comunicação DRIP.
+
+Componentes de uma campanha
+
+	A campanha
+
+INSERIR IMAGEM
+ 
+Uma campanha requer um título, assim como um grupo de contacto para enviar os eventos. Cada campanha só podem operar em um grupo; uma nova campanha é necessária para cada grupo que você queira interagir.
+ 
+INSERIR IMAGEM
+ 
+Um evento de campanha representa uma ação que é realizada em relação a um valor de data e hora armazenado dentro de um campo do contato. Como tal, um evento de campanha deve definir qual o campo do contato a qual ela estará relacionada, às definições para o campo (a quantidade de minutos, horas, dias, semanas antes ou após o valor do campo de contato), bem como a ação a ser executada (enviar um mensagem ou iniciar um fluxo).
