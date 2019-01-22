@@ -1,0 +1,104 @@
+Um fluxo é uma representação visual da árvore de lógica condicional que é aplicado aos seus contatos, uma vez que eles entram no fluxo. Uma vez que um contato entrou em um fluxo, eles interagem diretamente com seus passos. Os passos são compostos de “Comandos de Ação”, “Comandos de Regras”, e determinar o comprimento de um fluxo, que pode ser um fluxo bem simples e curto, como um complexo e bem extenso.
+
+INSERIR IMAGEM
+
+Comandos de Ação
+
+INSERIR IMAGEM
+
+Um Comando de Ação “ActionSet” representa algumas medidas tomadas em nome do seu fluxo. Essencialmente, eles são comandos que permitem que você:
+Enviar um SMS de resposta “SMS response”  (padrão para “enviar mensagem”: ação – irá enviar uma mensagem para os contatos ativos que atingem essa etapa no fluxo);
+Enviar uma mensagem para outra pessoa “SMS to somebody else” (fora do local de interação);
+Adicionar rótulos as mensagens “Add a label to a Message”;
+Atualizar um atributo do contacto “Update the contact” (com um valor recebido de uma resposta, por exemplo);
+Ordenar contatos, adicionando-os a grupos “Add contact to a group”;
+Remover contatos de grupos “Remove contact from a group”;
+Fazer uma chamada para um servidor externo “Make a call to an external server”;
+Enviar um email “Send an Email”;
+Definir o idioma preferencial de um contato “set a contact’s preferred language”;
+Iniciar um outro fluxo “Start another flow”;
+Iniciar outra pessoa em um fluxo “start someone else in a flow”;
+
+Comandos de ações compreendem ações que são executadas imediatamente, na ordem de cima para baixo.
+ 
+ 
+Comandos de Regras (RuleSet)
+	Comandos de Regras são os pontos de ligação em um fluxo. Eles são declarações condicionais que permitem direcionar seus contatos usando:
+uma mensagem recebida ou a gravada
+um campo de contato
+uma variável de fluxo
+um campo de formulário
+uma expressão
+
+Anatomia do comando de regras
+
+INSERIR IMAGEM
+
+Comandos de regras compreendem 5 entradas que lhe permitem construir uma instrução condicional poderosa:
+
+INSERIR IMAGEM
+
+A. O tipo de conjunto de regras que você gostaria de criar:
+ a. Aguardar resposta “Wait for response”: aguarda a resposta do usuário, em seguida, avalia de acordo com as regras criadas.
+ b. Chamada webhook “Call WebHook”: chama uma URL, passando-o pelo contexto do fluxo* e salva a resposta JSON para referência usando a variável @extra.
+ c. Dividir por campo de fluxo “Split by flow field”: executa regras de resposta de um valor recolhido por um conjunto de regras anteriores referenciadas usando o @flow.variável[Variable-name], por exemplo, @Flow.cidade.
+ d. Dividir por campo de contato “Split by contact field”: executa as regras de resposta de um valor armazenado em um campo de contato (nome, telefone, etc.), referenciado usando o @contact.variável[Nome da variável], por exemplo, @contact.Estado.
+ e. Dividir por expressão “Split by expression”: executa regras de resposta sobre o resultado de uma expressão, tais como @(REMOVE_FIRST_WORD (step.value)), o qual inclui uma função que remove a primeira palavra da última mensagem recebida, representado pela @step.variável.value. Expressões podem incluir uma única variável, uma única função, ou uma combinação de variáveis e funções.
+ f. Dividir por formulário de mensagem “Split by message form”: executa regras de resposta sobre um valor separados por um delimitador (um espaço, sinal de mais ou período), por exemplo, 1 + 2 + 3 + 4 + 5 (+ é o delimitador, enquanto que 1 é o primeiro valor, 2 é o segundo valor, 3 é o terceiro valor, etc.).
+B. Dependendo do tipo de comando selecionado, este é o valor que as regras de resposta são avaliados. Este valor, chama um operador, que representa uma variável ou expressão. No conjunto de regras foto abaixo, “se a resposta mensagem ..” indica que o operando é @step.value, ou a mensagem recebida.
+C. As regras de resposta “response rules”: avaliam o operador selecionado. regras de resposta são executadas a partir da esquerda para a direita. A primeira regra que corresponde entra em vigor e não as outras regras só são avaliadas depois. Ilhapush combina cada palavra de uma vez e apenas uma única regra individual na ordem em que ele apareceu na string original.
+
+INSERIR IMAGEM
+
+D. O(s) valor(es) das suas regras de resposta tentará corresponder o operando. No exemplo acima, criamos um conjunto de regras que tenta corresponder os nomes de cada uma das cidades de Alagoas. Com o “Wait for response” comando de regra a resposta selecionada “has any of this words” (têm qualquer uma destas palavras), as respostas recebidas serão colocadas em uma categoria chamada “Alagoas” se corresponder a alguma das palavras que você listou. Isso nos permite colocar a resposta “Eu moro em Maceió” na categoria “Alagoas” porque a palavra “Maceió” está contida na regra. Note que um fluxo será sempre correspondente a pelo menos uma regra de resposta.
+E. A categoria na qual os contatos são colocados se a resposta corresponde a regra de resposta correspondente. As categorias são caminhos a partir do qual as conexões podem ser guiadas para novas etapas, orientando assim o contato para a frente.
+
+INSERIR IMAGEM
+
+F. O nome dado à variável “flow” criada é preenchido pelo conjunto de regras. No exemplo acima, o comando de regras irá salvar o resultado da avaliação para a variável de fluxo @flow.estado.
+
+As entradas acima resultam na declaração condicional seguinte:
+Quando alguém chega a este ponto em seu fluxo, esperar por uma resposta. Se a resposta conter qualquer uma destas palavras -. Maceió, Maragogi, Arapiraca, etc. – classificá-lo como um Alagoas cada resposta como uma variável de fluxo chamada ‘Estado’.
+
+* Contexto Fluxo compreende as variáveis disponíveis em um determinado fluxo. Essas são as variáveis do fluxo usadas pelos comandos de ações, mas também pode incluir as variáveis de contatos associadas  a um contato que passa através do fluxo, ou dados obtidos a partir de uma fonte externa através de um webhook.
+
+Membros de fluxos
+
+Fluxos são espaços exclusivos onde seus contatos vão entrar e sair. Uma vez que um contacto entra em um fluxo, ele(a) torna-se um membro ativo do fluxo até que ele(a) saia. Passagem através do fluxo de entrada até a saída – é toda atividade que ocorre no meio – constitui uma “corrida”. Corridas e as atividade que ocorreram nele são exibidos nos resultados de fluxo. Fluxo de “corridas” podem ser listados e começados externamente através de uma API.
+O número de membros ativos são representados pelo ícone azul que aparece no canto superior esquerdo de cada comando de regra:                               
+
+INSERIR IMAGEM
+
+Você pode clicar no ícone para ver os nomes dos contatos ativos nessa fase e, se necessário, enviar-lhes uma mensagem de acompanhamento:
+
+INSERIR IMAGEM
+
+Entrando em um fluxo
+Os contactos podem entrar nos fluxos das seguintes maneiras:
+Você pode colocá-los em um fluxo utilizando o botão “Começar fluxo” no editor de fluxo;
+Eles podem ser colocados em um fluxo desencadeados por um evento de campanha;
+Eles iniciam um fluxo através do envio de uma palavra-chave;
+Um contato desencadeia um fluxo ligando para o número de telefone do seu canal;
+Um fluxo é desencadeado por uma chamada perdida de um contato;
+Um contacto desencadeia um fluxo através do envio de uma mensagem para o seu canal que não é tratada em outro lugar.
+
+Sair de um fluxo
+Um Contato irá sair do fluxo quando:
+Ele completar um fluxo passando pela última etapa;
+Ele passa por uma etapa que não tenha continuação;
+Ele passa por uma ação que inicia outro fluxo;
+Sua participação no fluxo expirou depois de um certo período de inatividade definido no diálogo de atualização de fluxo dentro do editor de fluxo
+
+INSERIR IMAGEM
+
+Regras de membros de fluxo
+Os contatos só podem interagir com um fluxo de cada vez. Se um contato é simultaneamente colocado em mais de um fluxo, suas respostas serão tratadas pelo fluxo mais recente. Enquanto um contato está ativo em um fluxo, as suas respostas serão tratadas exclusivamente pelo fluxo ativo no momento até que o usuário saia ou o prazo expire.
+Melhores Práticas de edição
+(1) Manter a proporção de 1:1 Resposta/Mensagem
+Com a exceção de eventos de campanha que são escalonados para cada contato individual, fluxos devem corresponder a cada mensagem recebida com uma mensagem de saída, e vice-versa.
+(2) Construir horizontalmente
+Quando a construção de um fluxo, recomendamos montar o fluxo na vertical ao invés da horizontal. O editor de fluxo é projetado para suportar o movimento horizontal até um ponto, mas vai expandir verticalmente indefinidamente.
+(3) Segmente seus fluxos
+Caso seu fluxo seja muito grande, considere dividi-lo em outros fluxos utilizando o comando de regra “Start another flow”.
+
+INSERIR IMAGEM
