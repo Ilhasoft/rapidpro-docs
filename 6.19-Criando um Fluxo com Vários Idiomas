@@ -1,0 +1,28 @@
+Depois de definir o idioma primário e secundário de sua conta, você pode editar os seus fluxos para alternar entre vários idiomas, dependendo das preferências de idioma dos seus contatos. Depois de ter selecionado as línguas para a sua organização, você pode criar fluxos em vários idiomas, seguindo estes passos:
+
+1. Navegue até a guia fluxos e criar um fluxo;
+
+2. Selecione o idioma principal do fluxo. Este será o idioma que você verá ao projetar seu fluxo. Se o fluxo não tem traduções, este será o idioma padrão usado;
+
+INSERIR PRINT
+
+3. Construa seu fluxo normalmente;
+4. Assim que terminar de projetar seu fluxo, clique no idioma secundário que você deseja adicionar. Você vai ser mostrado o percentual de caracteres traduzido;
+
+INSERIR PRINT
+
+5. Cada caixa em amarelo significa que ainda não foi traduzida;
+
+INSERIR PRINT
+
+6. Clique em cada caixa para adicionar a tradução;
+
+INSERIR PRINT
+ 
+Nota: @contact.first_name e outras variáveis não devem ser traduzidas, porque elas serão substituídas por seus valores correspondentes quando as mensagens forem enviadas.
+
+7. As etapas traduzidas apareceram em branco enquanto o idioma que elas vão ser traduzidas estejam selecionadas.
+
+INSERIR PRINT 
+
+8. Uma vez que o fluxo for totalmente traduzido, os contatos receberão mensagens de acordo com a preferência de idioma que aparece em seus perfis.
