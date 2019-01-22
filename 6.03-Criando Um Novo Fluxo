@@ -1,0 +1,21 @@
+Para criar um fluxo, navegue até a guia “fluxos” e clique no botão “Criar fluxo” 
+
+INSERIR IMAGEM
+
+A caixa de diálogo “Criar fluxo” aparecerá, onde você pode:
+Definir o nome do fluxo;
+Atribuir disparadores de palavras-chave;
+Especificar quanto tempo os contatos inativos permanecerão no fluxo antes de serem removidos;
+Selecionar o tipo de fluxo que você gostaria de criar;
+Definir o idioma em que você vai editá-lo.
+
+INSERIR IMAGEM
+
+Uma vez que você tenha definido os atributos adequados, clique no botão “Criar” para entrar no editor de fluxo.
+Melhores Práticas de edição
+(1) Construir horizontalmente
+Durante a construção de um fluxo, recomendamos desenhar seu fluxo na vertical. O editor de fluxo é projetado para suportar o movimento horizontal até um ponto, mas vai permitir o movimento vertical indefinidamente.
+(2) Segmente seus fluxos
+Se o fluxo que você pretende construir é longo, considere dividi-lo em vários fluxos usando um conjunto de regras para iniciar outra ação de Fluxo:
+
+INSERIR IMAGEM
