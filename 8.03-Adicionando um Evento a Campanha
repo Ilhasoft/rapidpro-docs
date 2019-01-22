@@ -1,0 +1,21 @@
+Um evento de campanha representa uma ação que será realizada em relação a um valor de data e hora armazenado dentro de um campo de contato. Como tal, um evento de campanha deve definir qual o campo de contato fará a relação, o deslocamento para o campo (a quantidade de minutos, horas, dias, semanas antes ou após o valor do campo de contato), bem como a ação a ser executada (enviar um mensagem ou iniciar um fluxo).
+ 
+Criando um evento de campanha
+1. Navegue até a guia Campanhas, clique na campanha que você gostaria de adicionar um evento.
+
+INSERIR PRINT
+
+2. Clique na caixa “Add Event” no canto superior direito.
+
+3. Selecione a ação que deseja atribuir ao evento.
+
+4. Defina a data e hora que você quer que o seu evento a comece (isto é referido como o “offset”). As seguintes entradas compreendem um deslocamento:
+
+Número de minutos, horas, dias, semanas
+Antes ou depois de o campo de contacto seleccionado
+O campo do contato selecionado
+O momento em que o evento será acionado na data em relação ao campo contacto seleccionado
+
+INSERT
+ 
+Você poderá adicionar quantos eventos achar necessário.
