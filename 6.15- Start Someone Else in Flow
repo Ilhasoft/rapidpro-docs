@@ -1,0 +1,51 @@
+Use Start Someone Else in a Flow to put a contact or a separated group into a flow when a contact reaches this step. On the example below, we are calling the support contact when the user reaches on this point.
+
+Insert a Print
+
+Creating a New Contact
+
+This action can be used to create a new contact on the flow.
+On the example below, Patient Register, the contacts are being invited to present the patients' names and phone number registered. When the information is collected, the Start Someone Else in a flow unleashed a new flow, Create a New Patient, a contact with the standard field will be created. Name and phone number are filled using an actualization from a contact variables flow (@flow.name and @flow.phone) collected on the previous flow, patient register. 
+The first flow collects patient information, while the second flow actualizes a contact profile for the patient.
+
+INSERT A PRINT
+
+The contact name and the phone number are collected, so the new contact phone number is sent to “Creating Contacts”.
+
+INSERT A PRINT
+
+When the contacts phone number starts the flow  “Creating Contact”, it will be added to the contact guide. You can do this using an actualization on your Full Name Field to complete your profile. You can do this using an actualization command action putting the collected name on the previous flow (referred using the variable @extra.flow.name; all variables on the previous flow can be called using @extra before the variable name) on the full name contact field.
+
+INSERT A PRINT
+
+Using @new_contact
+Imagine that you would like to be the only contact - a pregnant woman, for example - to receive tickets related to pregnancy, and tickets related to medical assistance to other children. The key is created different profiles for each child, all contacts containing the mother's phone number, so, she can receive campaign events for each child.
+
+Creating Additional Contacts
+First, you need to have a mother on a flow to get important information about each child, so all execution will result in a new contact child.
+
+INSERT A PRINT
+
+After to collect relevant information about the child, you will use @new_contact to create a reserved space for the child's profile, and Start Someone in a Flow that will actualize the value.
+
+INSERT A PRINT
+
+Actualize the User Profile
+The next flow will contain a series of contacts actualization that will actualize the collected values on the previous flow (name, sex, age) to the child's reserved space.
+
+INSERT A PRINT
+
+Firstly, you should create a contact field for the child containing the mother's phone number (you can create new contact fields into the Actualize Contact). So, you will fill in this field with the mother's phone number using the @step.contact.tel_e164 variable. @Step.contact refer to the mother.
+
+INSERT A PRINT
+
+After that, you will put the @extra variable before each collected values starting from a previous flow:
+
+INSERT A PRINT
+
+When the child's profile is created is possible to attribute them in your own campaign.
+
+Sending Information to a Child 
+To send information to a mother about her son,  you will need it to create a campaign event that will be sent to a child's contact profile containing a Send a Message to Someone Else or Start Someone Else in a Flow to send a message to the mother. The address that you will use is the contact field containing the mother's phone number, @contact.mother_phone.
+
+INSERT A PRINT
