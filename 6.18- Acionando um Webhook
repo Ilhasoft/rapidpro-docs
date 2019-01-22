@@ -1,0 +1,48 @@
+Embora IlhaPush forneça métodos flexíveis para armazenar e avaliar valores, pode chegar uma situação onde você quer buscar dados de uma aplicação externa (como um código de cupom, número de ordem ou ID do paciente) e avaliá-lo usando a lógica de fluxo; ou enviar informações (coletados por meio de um fluxo de RuleSets e atribuída a variáveis) para um aplicativo externo. Isto pode ser conseguido através da adição de uma chamada webhook para o seu fluxo. Quando um usuário alcança o webhook, vamos chamar a URL que você configurou, passando o texto da mensagem enviada pelo seu contato, bem como todas as outras variáveis recolhidas até aquele ponto no fluxo. Se retornar JSON, o ilhapush irá salvar esses valores para uso posterior no fluxo.
+Por exemplo, se você configurar um webhook no início do seu fluxo que buscar por um pedido, ele irá retornar chaves JSON do seu site e seus valores em um formato semelhante ao seguinte:
+{
+“status”: “Shipped”,
+“number”: “CU001”,
+“name”: “Ben Haggerty”,
+“ship_date”: “October 9th”,
+“delivery_date”: “April 3rd”,
+“description”: “Vogue White Wall x 4”
+}
+Você será então capaz de fazer referência a essas chaves em qualquer lugar do fluxo através de uma variável @extra, por exemplo, @Extra.status.
+
+INSERIR IMAGEM
+
+Neste exemplo, vamos mostrar-lhe como configurar um fluxo para procurar um pedido e conduzir o contato com base nos resultados. Você pode seguir junto com o fluxo da amostra “Order Status Checker” localizado na guia fluxos dentro de sua conta.
+1. Atribuir respostas de seus contatos a uma variável de fluxo
+Crie um RuleSet que recolha o valor-alvo de seus contatos e salve como uma variável de fluxo. No exemplo abaixo, estamos criando uma RuleSet Wait for Response  que irá recolher os números de pedidos dos nossos contatos e guardá-las como uma variável de fluxo @flow.pedido:
+
+INSERIR IMAGEM
+
+2. Buscar os dados externos
+Criar uma chamada webhook, alterne o pedido de “POST”, e digite uma URL que contém as chaves JSON que você deseja chamar:
+
+INSERIR IMAGEM
+ 
+O JSON que coincide com o número do pedido apresentado por seus contatos como a variável de fluxo @flow.pedido será guardado para o “pedido webhook” @flow.pedido_webhook. O registro de ação dentro do simulador irá mostrar-lhe que os valores estão sendo devolvidos.
+
+ INSERIR IMAGEM
+ 
+3. Avaliar a variável externa
+Em seguida, devemos criar uma divisão por RuleSet que avalia um dos valores devolvidos contra a regra de resposta. No exemplo abaixo, porque a chave de status (@extra.status) só pode conter um dos três valores (Shipped, Pending, Cancelled), podemos usar o has all these words para discernir qual valor será retornado para o contato:
+
+INSERIR IMAGEM
+
+Se o valor de status retornado for igual a “enviado”, “pendente” ou “cancelado”, o contato será dirigido em conformidade. Caso contrário, o contato irá passar através da categoria “outros” e receber um pedido para reenviar um valor @flow.status:
+
+INSERIR IMAGEM 
+ 
+Visualizando webhook logs
+Para visualizar os logs do webhook, navegue até a página da sua conta, clique no ícone webhook, em seguida, clique no botão “Registro da API” no canto inferior direito:
+
+INSERIR IMAGEM
+
+Seus eventos recentes serão listados em ordem cronológica com o tipo de evento, status, canal e as tentativas:
+
+INSERIR IMAGEM
+
+Você pode clicar em um evento para ver o conteúdo do pedido e as propriedades JSON correspondentes.
