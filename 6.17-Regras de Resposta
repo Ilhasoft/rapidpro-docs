@@ -1,0 +1,52 @@
+As regras de respostas irão avaliar o operando designado pelo tipo de conjunto de regras. Lembre-se do artigo de RuleSets que para cada RuleSet é designado um operando diferente. No exemplo abaixo, vemos que uma RuleSet Response avalia a mensagem recebida, ou o operando @step.value. RuleSet fornecer uma série de testes que podem ser executados contra o operando selecionado. Por exemplo, o ‘has any of these words’ testa o operando para qualquer uma das palavras que designam. RuleSets são executadas da esquerda para a direita (cima para baixo). A primeira regra que corresponder, entra em vigor e não as outras regras não são avaliadas depois que há uma correspondência. Ilhapush avalia cada palavra uma vez, e apenas uma vez em uma única regra individual na ordem em que ele apareceu na string original.
+
+INSERIR PRINT
+
+Se o operando corresponde a uma RuleSet, o contato vai passar pela categoria atribuída a essa regra. No exemplo abaixo, o RuleSet está esperando uma mensagem recebida, que irá avaliar as regras de resposta atribuídos ao adulto, criança e outras categorias. Note que um fluxo será sempre correspondente a pelo menos uma regra de resposta em um conjunto de regras como a última regra de resposta deve ser sempre um catch-all ( “Outro”). A passagem por categorias é representada no guia de análise, bem como no editor de fluxo (por exemplo, o número de vezes que um contato passou pelas categorias Sim ou Não de um conjunto de regras que avalia as respostas a uma pergunta sim ou não ).
+
+INSERIR PRINT
+
+Note que as regras de resposta combinando com nomes das categorias será representado como uma categoria dentro de um conjunto de regras a partir do editor de fluxo.
+
+Exemplos:
+A regras de resposta permitem que você:
+Categorizar respostas múltiplas em uma única categoria. Por exemplo, se você está pedindo para os contatos responderem o seu tipo favorito de refrigerante, você pode criar regras que permitem “Coca” e “Pepsi”, a ser classificados como “Cola”.
+Alterar respostas numéricas para respostas narrativa, ou vice-versa. Por exemplo, se você perguntar a seus contatos sobre a sua satisfação com um serviço em uma escala de 1 a 5, você pode criar uma regra que permite a resposta “1” para ser classificado como “ruim” e “5” para ser categorizadas como “excelente”.
+Definir um intervalo aceitável para uma resposta numérica.
+Respostas inesperadas serão enviadas diretamente para uma categoria “Outros”. Por exemplo, se você está perguntando a seus contatos sobre o gênero e receber a resposta “Gato”, esta resposta é classificada como “Outros”.
+Traduzir respostas de modo que as respostas afirmativas como “Yego” (Kinyarwanda) ou “Si” (espanhol) sejam categorizados como “Sim”.
+
+Regras de resposta especiais
+Has a phone number (Têm um número de telefone)
+Você pode usar o “has a phone number” para validar que a resposta inclui algo que se parece com um número de telefone válido. A resposta em si será guardada como um número totalmente qualificado. Por exemplo, se alguém responde com o número 0788123123 será guardado como 250.788.123.123. Se um número válido não for apresentado, você pode pedir para os contatos responderem novamente.
+Matches Regex
+Em alguns casos, como validar um número de identificação ou código de cupom, você pode precisar de uma regra mais complicada para determinar se uma resposta é válido. A expressão regular (regex) é um padrão usado para descrever um formato de apresentação aceitável. Um grande recurso para testar as suas expressões regulares é Regex101, que lhe permite testar qualquer uma das respostas que você espera para uma expressão regular.
+Por exemplo, digamos que estamos pedindo a alguém para introduzir um número de série de um dispositivo que eles estão registrando:
+
+INSERIR PRINT
+ 
+Sabemos que os números de série válidos devem começar com a letra “U” e ter exatamente nove dígitos, então podemos fazer a verificação dos números de série usando:
+
+INSERIR PRINT
+
+Algumas observações sobre expressões regulares:
+Elas não são case sensitive (não diferencia maiúsculas e minúsculas), então você não precisa colocar diferentes opções com base na caixa.
+Os “grupos” de expressão regulares estão disponíveis depois de um registro usando @extra. O grupo 0 está disponível como @extra.0, o primeiro grupo como @extra.1 e assim por diante.
+O valor guardado para o passo no fluxo será grupo 0.
+
+
+Coleta de várias seleções
+	Note que além de recolher uma única resposta a uma pergunta com várias opções, você pode usar o “has a number equal to” para recolher múltiplas escolhas com uma única resposta. Aqui está um exemplo:
+
+Escolha sua cor favorita
+	“Send a message” abaixo pede ao destinatário para escolher sua cor favorita, ou selecionar múltiplas se ele tiver mais de uma. Cada escolha é codificada por um número, o que lhe permite recolher várias seleções em ordem numérica. Isso vai evitar a necessidade de responder por todas as combinações de números possíveis.
+
+ INSERIR PRINT
+ 
+A etapa de divisão correspondente poderia então usar o “has a number equal to” para categorizar cada possível combinação de respostas:
+ 
+INSERIR PRINT
+ 
+Qualquer resposta que não corresponda às regras de resposta acima serão classificadas como “Other”. Você pode usar um loop de redirecionamento para ligar a categoria “Other” a uma mensagem que reafirma o formato de resposta aceitável, então dá ao destinatário a oportunidade de responder corretamente.
+
+ INSERIR PRINT 
