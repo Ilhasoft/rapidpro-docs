@@ -1,0 +1,28 @@
+Além de pesquisar contatos por nome ou número de telefone, você pode colocar consultas na barra de pesquisa em seu guia de contatos para procurar contatos com base nos valores em seus campos de contato.
+Consultas
+A consulta que você entrar vai operar em todos os campos de contato presentes na sua conta. Note que os campos e valores não são case sensitive(não diferencia letras maiusculas de minusculas) dentro de uma consulta.
+
+INSERIR IMAGEM
+
+Operadores
+
+Na consulta retratada acima, faz-se referência a um campo de contacto chamada “idade” e usando os operadores “maior ou igual a ” “> =” e “menor ou igual a” ‘<=’ para especificar as características desejadas de um contato que você está procurando. Observe que, com campos de contato que contêm duas ou mais palavras, os espaços precisam ser substituídos por underline, por exemplo, id_number = 409328.
+Variáveis
+Você pode usar ‘OR’ para combinar dois ou mais valores de campo de contato, e ‘AND’  para filtrar por campos de contato. Por exemplo:
+(Cidade = “Maceió” or cidade = “Aracaju”), retornará somente os contatos cujo campo ‘Cidade’ contém “Maceió” ou “Aracaju”;
+(Cidade = “Maceió” and sexo = “masculino”), retornará somente os contatos cujo campo ‘Cidade’ contém “Maceió” e cujo campo “Sexo” contém “masculino”.
+
+Tipos de campo
+
+Os valores de texto contendo várias palavras devem ser colocados entre aspas, por exemplo, cidade = “São Paulo”, enquanto os operadores como “> =” apenas trabalham com valores numéricos ou de data e hora.
+
+INSERIR IMAGEM
+
+Grupos dinâmicos
+
+Grupos resultantes de consultas são chamados de grupos dinâmicos. Grupos dinâmicos são os únicos em que vão continuar a terem contatos adicionados automaticamente caso os mesmos correspondam à consulta que os criou.
+
+Criando um grupo dinâmico
+Uma vez que você inserir uma consulta, o ilhapush irá retornar o grupo de contatos que combinem com ele. Você pode salvar este novo grupo clicando no botão “Salvar como Grupo” botão abaixo da barra de pesquisa.
+
+INSERIR IMAGEM
