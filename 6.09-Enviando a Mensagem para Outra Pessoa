@@ -1,0 +1,25 @@
+Coloque esta ação em qualquer etapa em um fluxo para enviar uma mensagem a alguém que não seja o contato ativo que chega a essa etapa. Por exemplo, essa acção pode ser utilizada para:
+
+Outros alertas do progresso de um contato em um fluxo;
+Outros de alerta de resposta de um contato a uma pergunta em um fluxo;
+Vincular um contato com um membro da equipe capaz de continuar a conversa diretamente do seu próprio telefone.
+
+
+Encaminhamento de mensagens
+O exemplo abaixo é um exemplo de um fluxo configurado para encaminhar a resposta de um contato a uma pergunta específica aos membros da sua equipe:
+
+INSERIR IMAGEM
+
+Na mensagem acima, usamos variáveis para representar as seguintes informações sobre cada contato que atinge esta etapa:
+@step.contact.name: Representa o nome do contato que está ativo no fluxo;
+@flow.estado: Representa o estado que o contato escolheu na etapa “Wait for Estado”;
+@step.contact.email: Representa o email do usuário.
+@Step.contact vs. @contact - Note que há duas maneiras de fazer referência a contatos e seus campos dentro de um fluxo:
+@contact – referência o contato que irá receber a mensagem. Na maioria dos casos, este é o contato ativo – a pessoa cujas respostas estão sendo manipulados pelo fluxo. Ao usar o Enviar uma mensagem a alguém(Send a Message to Someone Else), @contact refere-se ao contato ou grupo de contatos para o qual a mensagem está sendo enviada.
+@Step.contact – referencia o contato que enviou a última mensagem tratada pelo fluxo. Na maioria dos casos, este é também o contacto activo. Ao usar o Send a Message, @step.contact e @contact são o mesmo contato. Ao usar o Send a Message to Someone Else, @step.contact refere-se ao contato que atingiu o Send a Message to Someone Else dentro do fluxo, provocando, assim, o envio da mensagem.
+
+Aqui está um exemplo:
+
+INSERIR IMAGEM
+
+Uma vez que a mensagem criada pelo Send a Message to Someone Else está sendo enviada para Nelson, @contact.first_name será substituído com o primeiro nome do Nelson. @Step.contact.name e @step.contact.email será substituído com o nome e email do contato que acabou de se registrar através do fluxo.
