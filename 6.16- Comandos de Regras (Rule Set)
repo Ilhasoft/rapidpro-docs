@@ -1,0 +1,60 @@
+Comandos de Regras são os pontos da ligação em um fluxo. Eles são declarações condicionais que permitem direcionar seus contatos usando:
+uma mensagem recebida ou a gravada
+um campo de contato
+uma variável de fluxo
+um campo de formulário
+uma expressão
+Anatomia do comando de regras
+
+INSERIR IMAGEM
+
+Comandos de regras compreendem 5 entradas que lhe permitem construir uma instrução condicional poderosa:
+(a) O tipo de conjunto de regras que você gostaria de criar:
+
+INSERIR IMAGEM
+
+Aguardar resposta “Wait for response”: aguarda a resposta do usuário, em seguida, avaliar de acordo com as regras criadas.
+
+Chamada webhook “Call WebHook”: chama uma URL, passando-o pelo contexto do fluxo* e salva a resposta JSON para referência usando a variável @extra.
+
+Dividir por campo de fluxo “Split by flow field”: executa regras de resposta de um valor recolhido por um conjunto de regras anteriores referenciadas usando o @flow.variavel[Variable-name], por exemplo, @Flow.cidade.
+
+Dividir por campo de contato “Split by contact field”: executa as regras de resposta de um valor armazenado em um campo de contato (nome, telefone, etc.), referenciado usando o @contact.variável[Nome da variável], por exemplo, @contact.Estado.
+
+Dividir por expressão “Split by expression”: executa regras de resposta sobre o resultado de uma expressão, tais como @(REMOVE_FIRST_WORD (step.value)), o qual inclui uma função que remove a primeira palavra da última mensagem recebida, representado pela @step.variável.value. Expressões podem incluir uma única variável, uma única função, ou uma combinação de variáveis e funções.
+
+Dividir por formulário de mensagem “Split by message form”: executa regras de resposta sobre um valor separados por um delimitador (um espaço, sinal de mais ou período), por exemplo, 1 + 2 + 3 + 4 + 5 (+ é o delimitador, enquanto que 1 é o primeiro valor, 2 é o segundo valor, 3 é o terceiro valor, etc.).
+
+* Contexto Fluxo compreende as variáveis disponíveis em um determinado fluxo. Essas são as variáveis do fluxo usadas pelos comandos de ações, mas também pode incluir as variáveis de contatos associadas  a um contato que passa através do fluxo, ou dados obtidos a partir de uma fonte externa através de um webhook.
+
+
+(b) Dependendo do tipo de comando selecionado, este é o valor que as regras de resposta são avaliados. Este valor, chama um operador, que representa uma variável ou expressão. No conjunto de regras na foto acima, “se a resposta mensagem ..” indica que o operando é @step.value, ou a mensagem recebida.
+
+(c) As regras de resposta “response rules”: avaliam o operador selecionado. Regras de resposta são executadas a partir da esquerda para a direita. A primeira regra que corresponde entra em vigor e não as outras regras, que só serão avaliadas depois. Ilhapush combina cada palavra de uma vez e apenas uma única regra individual na ordem em que ele apareceu na string original.
+
+INSERIR PRINT
+
+(d) O(s) valor(es) das suas regras de resposta tentará corresponder o operando. No exemplo acima, criamos um conjunto de regras que tenta corresponder os nomes de cada uma das cidades de Alagoas. Com o “Wait for response” comando de regra a resposta selecionada “has any of these words” (têm qualquer uma destas palavras), as respostas recebidas serão colocadas em uma categoria chamada “Alagoas” se corresponder a alguma das palavras que você listou. Isso nos permite colocar a resposta “Eu moro em Maceió” na categoria “Alagoas” porque a palavra “Maceió” está contida na regra. Note que um fluxo será sempre correspondente a pelo menos uma regra de resposta.
+
+(e) A categoria na qual os contatos são colocados se a resposta corresponde a regra de resposta correspondente. As categorias são caminhos a partir do qual as conexões podem ser guiadas para novas etapas, orientando assim o contato para a frente.
+
+INSERIR PRINT
+
+(f) O nome dado à variável “flow” criada é preenchido pelo conjunto de regras. No exemplo acima, o comando de regras irá salvar o resultado da avaliação para a variável de fluxo @flow.estado.
+As entradas acima resultam na declaração condicional seguinte:
+“Quando alguém chega a este ponto em seu fluxo, esperar por uma resposta. Se a resposta conter qualquer uma destas palavras -. Maceió, Maragogi, Arapiraca, etc. – classificá-lo como um Alagoas cada resposta como uma variável de fluxo chamada ‘Estado’.
+Divisões ativas vs. passivas
+Você pode perceber que a resposta dividir etapa do diálogo é azul, enquanto o resto são cinza:
+Ativas:
+
+INSERIR PRINT
+
+Respostas que têm divisões são ativas. Eles necessitam de uma resposta de um contacto, como o valor a ser avaliado (resposta do contacto) não é inicialmente conhecido.
+Passivas:
+As etapas passivas não requerem respostas de um contato, como os valores que são avaliados já são conhecidos. Portanto, os contatos que passam por uma série de divisões passivas não contará com relação aos créditos.
+Etapas passivas incluem:
+Calling a Webhook;
+Split by flow field;
+Split by contact field;
+Split by expression;
+Split by message form.
