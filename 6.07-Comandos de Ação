@@ -1,0 +1,46 @@
+INSERIR IMAGEM
+
+Um Comando de Ação “ActionSet” representa algumas medidas tomadas em nome do seu fluxo. Essencialmente, eles são comandos que permitem que você:
+Enviar um SMS de resposta “SMS response”  (padrão para “enviar mensagem”: ação – irá enviar uma mensagem para os contatos ativos que atingem essa etapa no fluxo);
+Enviar uma mensagem para outra pessoa “SMS to somebody else” (fora do local de interação);
+Adicionar rótulos as mensagens “Add a label to a Message”;
+Atualizar um atributo do contacto “Update the contact” (com um valor recebido de uma resposta, por exemplo);
+Ordenar contatos, adicionando-os a grupos “Add contact to a group”;
+Remover contatos de grupos “Remove contact from a group”;
+Fazer uma chamada para um servidor externo “Make a call to an external server”;
+Enviar um email “Send an Email”;
+Definir o idioma preferencial de um contato “set a contact’s preferred language”;
+Iniciar um outro fluxo “Start another flow”;
+Iniciar outra pessoa em um fluxo “start someone else in a flow”;
+Comandos de ações compreendem ações que são executadas imediatamente, na ordem de cima para baixo:
+ 
+INSERIR IMAGEM
+
+Criando Comandos de Ações (Action Set)
+Clique na caixa “Criar mensagem” para abrir o editor de ação mostrado na figura abaixo, ou crie uma conexão com um passo existente.
+
+INSERIR IMAGEM
+
+Adicionando um ActionSet a um ActionSet Existente
+As ações podem ser ligadas a outras ActionSets, ou ser adicionada como um passo. Ações ligadas a outras acções são executadas imediatamente, de cima para baixo.
+
+INSERIR IMAGEM
+
+No exemplo abaixo, três ações são agrupados para registrar um novo contato. Quando um contato passa por essa etapa, as ações ocorrem na ordem em que eles estão empilhados:
+1. Uma mensagem é enviada ao grupo “Alagoas” alertando-os de que há um novo usuário querendo informações sobre Alagoas.
+2. Usuário é adicionado ao grupo “Alagoas-Usuários”.
+3. É enviada uma mensagem ao usuário informando que entraremos em contato em breve.
+Para adicionar uma ação a um ActionSet existente, clique no símbolo “+” no canto inferior direito da etapa da ação existente e selecione uma ação no editor de ação.
+
+INSERIR IMAGEM
+
+Alterando a ordem das ações dentro de uma ActionSet
+Para alterar a ordem das ações dentro de uma ActionSet, mova o cursor sobre o canto superior esquerdo da ação que você deseja mover, em seguida, clique no ícone “^”.
+
+INSERIR IMAGEM
+
+Deletando uma Ação
+Para excluir uma ação, mova o cursor sobre a ação que você deseja excluir e clique no ícone “x”. A ação ficará vermelha e solicitará a confirmação de exclusão. Clique no ícone “x” novamente para concluir o processo de exclusão.
+ 
+ 
+ 
