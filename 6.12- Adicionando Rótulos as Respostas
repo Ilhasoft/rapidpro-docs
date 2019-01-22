@@ -1,0 +1,15 @@
+Use a ação Criar Rótulo para rotular as mensagens recebidas processadas pelo seu fluxo. Considerando que a classificação de contatos em grupos permite a segmentação de contatos com base em suas respostas, rotulando as mensagens recebidas permite isolar as respostas de uma pergunta específica. Rótulos de mensagens podem ser vistos – e também criados- no separador mensagens.
+
+INSERIR PRINT
+
+Como funciona
+Vamos dizer que você está executando um estudo de terapia de aderência em que os participantes são convidados a indicar a forma como eles estão se sentindo cada dia – saudável ou doente: 
+
+INSERIR PRINT
+
+Adicionando uma ação Adicionar rótulo após o RuleSet “Wait for Saude” permite filtrar as respostas que passam por uma categoria em particular. No exemplo da foto acima, colocamos uma acção de Add Label  em um ramo que decorre da categoria “SentindoMal”. Assim, apenas respostas que estão registradas como “SentindoMal” serão marcadas. Você pode então ver essas mensagens, navegando até a guia mensagens e clique no rótulo de “SentindoMal”.
+
+Adicionando um rótulo
+Adicionar um rótulo é tão simples como a criação de um ActionSet, ou adicionar um ActionSet a um ActionSet existente. Você pode escolher um rótulo existente ou criar uma nova via o diálogo Adicionar rótulo:
+
+INSERIR PRINT
