@@ -1,0 +1,24 @@
+Introdução
+
+Disparadores, ou triggers, são as ferramentas usadas para fazer com que um contato alcance determinada ação na Organização, seja iniciar um fluxo ou simplesmente adicionar o contato a um grupo.
+Existem diversos tipos de triggers e algumas delas somente estarão disponíveis quando um canal compatível seja adicionado à sua Organização.
+Observe na imagem alguns tipos:
+
+INSERIR PRINT
+
+Keyword triggers
+O tipo mais comum é a palavra-chave. Pode funcionar quando a palavra configurada for a primeira palavra da mensagem ou a única, e é usada para iniciar um fluxo ou adicionar um contato a um grupo.
+Para criar uma keyword trigger basta clicar em “triggers”, e em “Create a message keyword that launches a flow”:
+
+INSERIR PRINT
+
+Em “keyword” você definirá uma palavra para funcionar como palavra-chave;
+Em “trigger when” , você irá escolher entre duas opções:
+Message starts with the keyword: Se a frase digitada pelo usuário iniciar com a palavra-chave, será disparado o fluxo escolhido;
+Message contains only the keyword: O fluxo escolhido será disparado, somente se o usuário digitar apenas a keyword;
+Em “Flow”, é definido o fluxo que irá iniciar quando for utilizada a keyword;
+Em “Only groups”, é possível aplicar as regras dessa trigger somente à grupos de contatos específicos, basta deixá-la em branco caso queira aplicar essa regra a todos os usuários.
+
+Agora, você pode usá-la, por exemplo, iniciar um fluxo de boas vindas, para que quando um usuário enviar “oi” ele seja cadastrado na minha Organização e se torne um contato,  como na imagem:
+
+INSERIR PRINT
