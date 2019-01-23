@@ -1,0 +1,11 @@
+O IlhaPush emula quase todos os operadores disponíveis no Excel para data e hora. Por exemplo, para adicionar 7 dias a uma data, basta apenas somar 7 a data atual.
+Te vejo na próxima semana no dia @(date.today + 7)
+
+Para lembrar de uma data passada basta apenas subtrair os dias.
+Semana passada foi @(date.today – 7)
+
+Para adicionar ou subtrair meses use a expressão EDATE
+A reunião do próximo mês será no dia @(EDATE(date.today, 1))
+
+Para alterar o tempo do valor de data e hora, adicionar ou subtrair o resultado da função TIME, por exemplo.
+2 horas e 30 minutos a partir de agora será @(date.now + TIME (2, 30, 0))
