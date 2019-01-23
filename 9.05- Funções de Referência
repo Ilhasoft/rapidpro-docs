@@ -1,0 +1,247 @@
+Argumentos da função em colchetes ([…]) são opcionais. Note que ao substituir variáveis, ex.: @(TIMEVALUE (flow.12_hour_time.category)), as aspas não são necessárias.
+
+Funções Data e Hora
+
+DATE(ano, mês, dia)
+Define um novo valor de data, por exemplo,
+Esta é a data @(DATE (2012, 12, 25))
+
+DATEVALUE (texto)
+Converte data armazenada no texto para uma data real, usando a configuração de formato de data da sua organização, por exemplo,
+Você se juntou em @(DATEVALUE (contact.joined_date))
+
+DAY (date)
+Retorna apenas o dia do mês de uma data (1 a 31), por exemplo,
+O dia atual é @(DAY(contact.joined_date))
+
+DAYS(“end_date”, “start_date”)
+Retorna o número de dias entre duas datas.
+
+@ (DAYS( “2016/02/28”, “2015/02/28”))
+DATEDIF ( “start_date”, “END_DATE”, “unidades”)
+Calcula o número de dias, meses ou anos entre duas datas. Unidades são abreviados “D”, “M”, e “Y”.
+@ (DATADIF ( “2015/02/26”, “2016/02/26”, “M”))
+
+EDATE (data, meses)
+Mova uma data pelo número determinado de meses, por exemplo,
+A reunião do próximo mês será em @(EDATE (date.today, 1))
+
+HOUR (datetime)
+Retorna apenas a hora de uma data (0 a 23)
+A hora atual é @(HOUR (NOW ()))
+
+MINUTE (data e hora)
+Retorna apenas os minutos de uma data e hora (0 a 59), por exemplo,
+O minuto atual é@ (MINUTO (NOW ()))
+
+SECOND(data e hora)
+Retorna apenas os segundos de uma data e hora (0 a 59), por exemplo,
+Os segundos correntes é @(SECOND (NOW ()))
+
+MONTH(data)
+Retorna apenas o mês de uma data (1 a 12), por exemplo,
+O mês atual é @(MONTH (NOW ()))
+
+NOW()
+Retorna a data e hora atuais, por exemplo,
+É atualmente @(NOW ())
+
+TIME(horas, minutos, segundos)
+Define um valor de tempo que pode ser usado para a aritmética de tempo, por exemplo
+2 horas e 30 minutos a partir de agora será @((date.now + TIME (2, 30, 0)))
+
+TIMEVALUE (texto)
+Converte a hora armazenadas em texto a um tempo real, por exemplo,
+Seu compromisso é às @((date.today + TIMEVALUE ( “2:30”)))
+
+TODAY()
+Retorna a data atual, por exemplo,
+A data de hoje é @(TODAY ())
+
+WEEKDAY(data)
+Retorna o dia da semana de uma data (1 para domingo a 7 para sábado), por exemplo,
+Hoje é @(WEEKDAY (HOJE ())) na semana
+
+YEAR (data)
+Retorna apenas o ano de uma data, por exemplo,
+O ano atual é @(YEAR (NOW ()))
+
+Funções lógicas
+
+AND (arg1, arg2, …)
+Retorna TRUE se e somente se todos os seus argumentos avaliados foram avaliados como verdadeiros, por exemplo,
+@(AND (contact.gender = “F”, contact.age> = 18))
+
+FALSO ()
+Retorna o valor lógico FALSO.
+
+IF (arg1, arg2, …)
+Retorna um valor se a condição for avaliada como TRUE, e outro valor se for avaliado como FALSE, por exemplo,
+Caro @(IF (contact.gender = “M”, “Senhor”, “Senhora”))
+
+OR (arg1, arg2, …)
+Retorna TRUE se qualquer argumento for TRUE, por exemplo,
+@(OR (contact.state = “GA”, contact.state = “WA”, contact.state = “IN”))
+
+TRUE()
+Retorna o valor lógico verdade.
+Funções matemáticas
+
+ABS (número)
+Devolve o valor absoluto de um número, por exemplo
+O valor absoluto de -1 é @ (ABS (-1))
+
+Average(number, …)
+Retorna a média (média aritmética) dos argumentos.
+
+MAX (arg1, arg2, …)
+Retorna o valor máximo de todos os argumentos, por exemplo,
+Por favor, preencha, no máximo @(MAX (flow.questions, 10)) perguntas
+
+MIN (arg1, arg2, …)
+Retorna o valor mínimo de todos os argumentos, por exemplo,
+Por favor, preencha pelo menos @((flow.questions, 10) MIN) questões
+
+POWER (número, potência)
+Retorna o resultado de um número elevado a uma potência – o equivalente ao operador ^, por exemplo,
+2 elevado à potência de 3 é @(POWER (2, 3))
+
+RAND ()
+Retorna um número real aleatório com distribuição uniforme maior que ou igual a 0 e menor do que 1, por exemplo
+0,6160317611
+
+RANDBETWEEN (número 1, número 2)
+Retorna um número inteiro aleatório entre os números especificados.
+
+ROUND (“número”, número de dígitos)
+Arredonda um número para um número especificado de dígitos.
+@ (ROUND (9,4378, 3))
+
+ROUNDDOWN (número, número de dígitos)
+Arredonda um número para baixo em direção a zero para o número especificado de dígitos.
+@ (ROUNDDOWN (9,4378, 3))
+
+ROUNDUP (número, número de dígitos)
+Arredonda um número para cima em direção a zero para o número especificado de dígitos.
+@ (Roundup (9,4378, 2))
+
+SUM (arg1, arg2, …)
+Retorna a soma de todos os argumentos, equivalente ao operador +, por exemplo,
+Você tem @((contact.reports, contact.forms) Soma) relatórios e formulários
+
+TRUNC (número)
+Trunca um número para um número inteiro, removendo a parte fracionária do número.
+
+Funções de texto
+
+CHAR (número)
+Retorna o carácter definido por um número, por exemplo,
+Tão fácil como @(CHAR (65)), @(CHAR (66)), @(CHAR (67))
+
+CLEAN(texto)
+Remove todos os caracteres não imprimíveis a partir de uma cadeia de texto, por exemplo,
+Você entrou @(CLEAN(step.value))
+
+CODE(texto)
+Retorna um código numérico para o primeiro carácter de uma cadeia de texto, por exemplo,
+O código numérico de A é @(CODE ( “A”))
+
+CONCATENATE(args)
+Junta-se cadeias de texto em uma cadeia de texto, por exemplo,
+Seu nome é @(CONCATENATE (contact.first_name, ” “, contact.last_name))
+
+FIXED (número, [decimais], [no_commas])
+Formata o número dado em formato decimal, usando um ponto e vírgula
+Você tem @ (FIXED(contact.balance, 2)) em sua conta
+
+INT (número)
+Arredonda um número para baixo para o número inteiro mais próximo.
+
+LEFT (texto, num_chars)
+Retorna os primeiros caracteres de uma cadeia de texto, por exemplo,
+Você entrou PIN @(LEFT (step.value, 4))
+
+LEN(texto)
+Retorna o número de caracteres em uma cadeia de texto, por exemplo,
+Você entrou com @(LEN(step.value)) caracteres
+
+LOWER (texto)
+Converte uma sequência de texto em minúsculas, por exemplo,
+Bem-vindo @(LOWER (contato))
+
+MOD (número, divisor)
+Retorna o resto da divisão.
+
+PROPER (texto)
+Define como maiúscula a primeira letra de cada palavra em uma cadeia de texto, por exemplo,
+Seu nome é @(Proper (contato))
+
+REPT (texto, número_vezes)
+Repete o texto em um determinado número de vezes, por exemplo,
+Estrelas! @(REPT( “*”, 10))
+
+RIGHT (texto, num_chars)
+Retorna os últimos caracteres de uma cadeia de texto, por exemplo,
+Sua entrada terminou com … @(RIGHT(step.value, 3))
+
+SUBSTITUTE (texto, old_text, new_text, [num_ instância])
+Substitutos NEW_TEXT para old_text em uma cadeia de texto. Se a instância for dada, então somente essa instância será substituído, por exemplo,
+@(SUBSTITUTE(step.value, “não pode”, “pode”))
+
+UNICHAR(número)
+Retorna o caractere Unicode especificado por um número, por exemplo,
+Tão fácil como @(UNICHAR (65)), @(UNICHAR (66)), @(UNICHAR (67))
+
+UNICODE (texto)
+Retorna um código numérico para o primeiro carácter de uma cadeia de texto, por exemplo,
+O código numérico de A é @(Unicode ( “A”))
+
+UPPER (texto)
+Converte uma sequência de texto em maiúsculas, por exemplo,
+BEM-VINDO @(UPPER (contato)) !!
+
+Funções do IlhaPush
+Essas funções são específicas do IlhaPush e não são encontrados no Excel, mas foram fornecidas por uma questão de conveniência.
+
+FIELD (texto, índice, [delimitador])
+Referência a um campo em uma string separada por um delimitador.
+@FIELD ( “Olá mundo”, 2 “,”)
+
+FIRST_WORD (texto)
+Retorna a primeira palavra no texto dado – o equivalente a PALAVRA (texto, 1), por exemplo,
+A primeira palavra que você digitou foi @(FIRST_WORD (step.value))
+
+PERCENT (número)
+Formata um número como uma porcentagem, por exemplo,
+Você completou @(PERCENT(contact.reports_done / 10)) relatórios
+
+READ_DIGITS (texto)
+Formato de dígitos em texto para leitura no TTS, por exemplo,
+Seu número é @(READ_DIGITS(contact.tel_e164))
+
+REMOVE_FIRST_WORD (texto)
+Remove a primeira palavra do texto dado. O restante do texto não será alterada, por exemplo:
+você digitou @(REMOVE_FIRST_WORD (step.value))
+
+WORD (texto, número, [by_spaces])
+Extrai a palavra da cadeia de texto. Se o número definido for um número negativo, ele é tratado como uma contagem decrescente a partir do fim do texto. Se a by_spaces especificada for TRUE, então a função divide o texto em palavras apenas por espaços. Caso contrário, o texto é dividido por caracteres de pontuação, bem como, por exemplo,
+@ (WORD ( “Olá cow-boy”, 2)) irá retornar “cow”
+@ (WORD ( “Olá cow-boy”, 2, TRUE)) retornará “cow-boy”
+@ (WORD ( “Olá cow-boy”, -1)) irá retornar “boy”
+
+Word_count (texto, [by_spaces])
+Retorna o número de palavras na sequência de texto. Se by_spaces for especificada como TRUE, então a função divide o texto em palavras apenas por espaços. Caso contrário, o texto é dividido por caracteres de pontuação, bem como, por exemplo,
+Você entrou @(step.value) WORD_COUNT () palavras
+
+WORD_SLICE (texto, iniciar [parar], [by_spaces])
+Extrai uma subcadeia das palavras que começam no início, até, mas não incluindo-stop. Se stop é omitido então o substring será todas as palavras do início até o final do texto. Se stop for um número negativo, ele é tratado como uma contagem decrescente a partir do fim do texto. Se by_spaces é especificada e é verdadeira, então a função divide o texto em palavras apenas por espaços. Caso contrário, o texto é dividido por caracteres de pontuação, bem como, por exemplo,
+@ (WORD_SLICE ( “IlhaPush expressões são divertidas”, 2, 3)) retornará palavras 2º e 3º “expressões são”
+@ (WORD_SLICE ( “IlhaPush expressões são divertidas”, 2)) irá retornar “expressões são divertidas”
+@ (WORD_SLICE ( “IlhaPush expressões são divertidas”, 1, -2)) irá retornar “IlhaPush expressões”
+@ (WORD_SLICE ( “IlhaPush expressões são divertidas”, -1)) irá retornar “divertidas”
+
+Solução de problemas
+Por que apenas uma parte da minha expressão é avaliada?
+Se a expressão não é uma única chamada de função ou variável, então você deve colocá-lo entre parênteses para o IlhaPush saber onde ela começa e termina, por exemplo,
+@ (SUM (contact.reports, step.value)) * 2 <- o “* 2” não é avaliado, deve ser escrito como:
+@ (SUM (contact.reports, step.value) * 2)
