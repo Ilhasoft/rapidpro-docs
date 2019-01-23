@@ -1,0 +1,5 @@
+A comparação lógica é uma expressão que avalia como VERDADEIRO ou FALSO. Estes podem usar os sinais de igual (=), diferente de (<>), maior que (>), maior ou igual que (> =), menor (<) e menor ou igual que (<=), por exemplo:
+
+@(Contact.age> 18)
+
+Note que quando se comparam os valores de texto, de igual (=) e diferente de (<>) os operadores não diferenciam caixa alta ou baixa.
