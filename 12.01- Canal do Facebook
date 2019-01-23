@@ -1,0 +1,94 @@
+Além de voz e SMS, IlhaPush permite que você aplique o nosso sistema de fluxo de trabalho para enviar os fluxos diretamente no inbox do Facebook. Os fluxos para Facebook são úteis para interagir com os usuários que curtiram a página da sua empresa. Além disso, eles permitem que você se envolva com clientes que estão ativos em uma plataforma que serve mais de 1,3 bilhões de usuários ativos mensais. O programa U-Report da UNICEF, por exemplo, utiliza os fluxos para Facebook para divulgar as pesquisas entre os jovens em vários países com grande sucesso.
+Conectando sua conta com o Facebook
+
+Para conectar sua conta com o facebook primeiro devemos criar o canal do mesmo.
+
+1- Para isso acesse sua conta, em seguida clique no botão de configurações em “Add Channel”:
+
+INSERIR IMAGEM
+
+2- Próximo passo é escolher o canal do Facebook que está localizado na área das redes sociais:
+
+INSERIR IMAGEM
+
+3- Agora temos que acessar o facebook para desenvolvedores através do site https://developers.facebook.com
+4- No canto superior direito em “My Apps” escolha a opção “Add a new APP”:
+
+INSERIR IMAGEM
+
+5- Escolha agora a opção “Website”
+
+INSERIR IMAGEM
+
+6- Selecione sua página, ou digite o nome desejado para criar um novo APP
+
+INSERIR IMAGEM
+ 
+7- Digite seu email para contato, escolha a categoria da sua página e selecione “Create App ID”
+
+INSERIR IMAGEM
+
+8- Selecione “Skip Quick Start”
+
+INSERIR IMAGEM
+
+9- Vá em “Settings” e preencha os campos “Privacy Policy URL”(caso sua empresa tenha algum site com as políticas de privacidade, cole o link, caso não, pode colocar http://push.ilhasoft.mobi/) e “App Icon” (vale ressaltar que a foto nesse campo deverá ter as dimensões de 1024×1024 pixels, e seu fundo deverá ser transparente). Feito isso, vá no canto inferior direito e selecione “Save Changes”
+
+INSERIR IMAGEM
+
+10- Ainda na aba “Settings” escolha a opção “Advanced”, em “App Page” selecione a sua página e novamente clique em “Save Changes” (caso sua página não apareça nessa opção, siga o passo 10.1)
+
+INSERIR IMAGEM
+
+10.1 – Em caso de sua página não estar disponível nesse ponto, click em adicionar produto (Add Product se estiver em inglês), em seguida click em “Get Started” na opção Messenger.
+
+INSERIR IMAGEM
+
+10.2 – Na tela seguinte é só clicar em “Get Started”, volte para a aba “settings” e continue com as configurações.
+
+11- Selecione a aba “App Review” e em “Make “nome da sua página” public” selecione “yes” e confirme
+
+INSERIR IMAGEM
+
+12- Próximo passo é adicionar o messenger, clique em “Products” selecione “Add Product” e selecione o “Messenger”.
+
+INSERIR IMAGEM
+ 
+13- Em “Token Generation” selecione a sua página e copie o link que será gerado ao lado.
+
+INSERIR IMAGEM
+
+14- Volte para a página do canal do Facebook no IlhaPush e cole o link gerado em “Page Access Token” e click em “Submit”.
+ 
+ INSERIR IMAGEM
+
+15- Volta para a página no Facebook de desenvolvedores e selecione “Setup Webhooks”
+
+INSERIR IMAGEM
+ 
+16- Novamente volte para o IlhaPush e copie o “URL do Webhook” e cole no facebook na aba “CallBack URL”. Faça o mesmo com o “Verify Token”, marque também as caixas “message_deliveries”, “messaging_optins”, “messages” e “messaging_postbacks” por fim click em “Verify and Save”.
+
+INSERIR IMAGEM
+
+17- Agora devemos criar um fluxo no IlhaPush para que o messenger interaja com seu usuário (caso já tenha um fluxo criado, pule para o passo 18). No ilhaPush, vá na aba “Fluxos” e depois click em “Criar Fluxo”.
+
+INSERIR IMAGEM
+
+18- Com seu fluxo criado, está na hora de criar um disparador para que ele seja inicializado. Vá para a aba “Disparadores” e selecione “Criar disparadores”. Selecione a opção “Start a flow when a conversation is started by a contact”, selecione a sua página do facebook, o fluxo que você criou e click em “Criar disparador”.
+
+INSERIR IMAGEM
+
+19- Agora já estamos prontos para fazermos o primeiro teste. Vá para a página no Facebook, selecione “Message”, “Get Started” e o fluxo que você selecionou iniciará automaticamente. 
+20- Após feito o teste, enfim poderemos postar nossa requisição para aprovação. Para isso, acesse novamente o Facebook para desenvolvedores, no seu aplicativo vá para a aba “Messenger”, no campo “App Review for Messenger” em “pages_messaging” selecione “Add to Submission”.
+
+INSERIR IMAGEM
+
+21- Desça um pouco a página e verá uma nova opção “Current Submission”, nela click em “Edit Notes”.
+
+INSERIR IMAGEM
+
+22- Na página que abrirá selecione a sua página (A). Na caixa abaixo (B) você deve descrever todas as palavras-chaves definidas para o fluxo (palavras que se digitadas irão iniciar um determinado fluxo) e o que essa palavra irá fazer (C), caso não tenha nenhuma marque a caixa abaixo (E). Na próxima caixa (D) descreva tudo que seu APP fará ex: cadastro de usuários, informações sobre novos eventos da empresa, informações de contatos, enquetes…) e por ultimo click em “Save”.
+
+INSERIR IMAGEM
+
+23- Agora devemos esperar a resposta do Facebook informando se nosso APP foi aprovado ou não, o tempo máximo de resposta deles é de 5 dias, mas, geralmente em 2 dias já terá a resposta. Caso aprovem, a implementação para o usuário é automática.
