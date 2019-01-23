@@ -1,0 +1,24 @@
+Using the Telegram channel you will access a platform superfast, simple and free used for more than 62 millions of people around the world through any mobile device. Telegram is a service based on instantaneous messages cloud - similar to WhatsApp and WeChat - focused in velocity, opening, and security. It is open source and encrypted end-to-end, what means that all send and receive data via telegram cannot be decipher when intercepted for the ISP, networking manager or third parties.
+
+Why telegram?
+Exists 5 important reasons that make Telegram our first choice to messages based on the cloud:
+1.Differently, of the most chat apps based on cloud, Telegram provides an open API that stimulates the integration and development.
+2.The telegram values of opening and security accords with our values, allowing us to provide an encrypted channel for organizations share information.
+3.It is totally free.
+4.Telegram allow you send until 30 messages per second – the same tax that a shortcode allows without a cost.
+5.Telegram provides a web app; a desktop version to Mac, Windows e Linux; and mobile apps to iOS and Android devices. It can be used in any place with an available internet connection.
+
+How does it work?
+Your Telegram channel will be represented for a bot.
+
+Telegram Bots are special accounts that will work as an interface for the flows and messages that will be sent by IlhaPush. Bots differ from the standard accounts because of they: 
+
+Don't have online status or the last message seen, the interface shows the label ‘bot’.
+The usernames always finish in ‘bot’ (for example,@IlhaPushBot, @GitHub_bot).
+Act as a simple interface for a Telegram API.
+
+So similar with the ilhapush, the telegram bots allow creating personalized tools that provides warnings, forecast, translations, and different services, for example, bot Poll.
+
+Broadcast Message
+Normally the Telegram does not provide a method to send broadcast messages or notifications.
+A bot did not connect to ilhapush can not start conversations with new users. A new user should add them to a group or send a message (they can use the link telegram.me/~~number=plural <bot_username>  or search the user name to find your bot). But, when a bot is connected to your ilhapush account, your telegram contacts will become ilhapush contacts, this allows you boost our diffusion functionality to start conversations and send notifications easily.
