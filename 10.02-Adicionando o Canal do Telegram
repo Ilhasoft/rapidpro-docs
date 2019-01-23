@@ -1,0 +1,32 @@
+Para adicionar o canal do Telegram basta seguir o caminho de adicionar canal como os outros.
+1- Vá para a página de configurações da sua conta
+
+INSERIR IMAGEM
+
+2- Clique no ícone de configuração e em seguida em “Adicionar Canal”
+
+INSERIR IMAGEM
+
+3- Selecione o canal Telegram que está localizado na parte de redes sociais
+
+INSERIR IMAGEM
+
+4- Será solicitado um token de autenticação que será gerado assim que você fizer o cadastro no Telegram. Para isso acesse a sua conta do telegram e procure pelo usuário @Botfather
+
+INSERIR IMAGEM
+
+5- Serão feitas algumas perguntas para a criação do Bot:
+Qual o nome que o bot terá ex: IlhaPush
+O nome do bot com o final bot ex: IlhaPush_bot
+obs.: O nome do bot não pode ter mais que 16 caracteres
+Por fim o token será enviado
+
+INSERIR IMAGEM
+
+6- Copie o Token gerado e cole no campo Authentication Token no ilhapush, após isso clique em Connect Telegram Bot
+
+INSERIR IMAGEM
+
+Nesse momento seu bot já está funcionando. Mas que um contato receba algum fluxo quando entrar em contato com ele deveremos criar um disparador do tipo “Iniciar um fluxo após detectar uma mensagem não tratada em outro local.” e escolher qual o fluxo deseja que seja iniciado com o contato do usuário.
+
+INSERIR IMAGEM
