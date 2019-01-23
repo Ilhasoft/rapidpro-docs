@@ -1,0 +1,5 @@
+The logical comparison is an expression that evaluates as TRUE or FALSE. This expression can use some operators: equals (=), different (<>), more than (>), more or equal (> =), lesser (<) and lesser or equals (<=), for example:
+
+@(Contact.age> 18)
+
+Notice that when you compare the text values, equals (=) and different (<>), the operators don't differ Upper and Lower case.
