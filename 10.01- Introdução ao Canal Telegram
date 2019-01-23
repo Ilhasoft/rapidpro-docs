@@ -1,0 +1,20 @@
+Com o canal Telegram você terá acesso a uma plataforma super-rápida, simples e livre utilizada por mais de 62 milhões de pessoas em todo o mundo através de qualquer dispositivo móvel. Telegrama é um serviço baseado na nuvem de mensagens instantâneas – semelhante ao WhatsApp e WeChat – com um foco na velocidade, abertura e segurança. É open source e encriptada end-to-end, o que significa que todos os dados enviados e recebidos via telegrama não pode ser decifrado quando interceptado pelo ISP, administrador de rede ou de terceiros.
+
+Por que telegram?
+Existem cinco grandes motivos que fazem do Telegram nossa primeira escolha para mensagens baseado em nuvem:
+1. Diferentemente da maioria dos aplicativos de bate-papo com base na nuvem, Telegram fornece uma API aberta que estimula a integração e o desenvolvimento.
+2. Os valores do telegrama de abertura e de segurança em linha com a nossa, permitindo-nos fornecer um canal criptografado para as organizações trocarem informações.
+3. É totalmente gratuito.
+4. Telegram lhe permitirá enviar até 30 mensagens por segundo – a mesma taxa que um código curto permitiria sem nenhum custo.
+5. Telegram fornece um aplicativo de web; uma versão desktop para Mac, Windows e Linux; e aplicativos móveis para todos os dispositivos iOS e Android. Ele pode ser usado em qualquer lugar com conexão à Internet disponível.
+
+Como funciona?
+Seu canal Telegram será representado por um bot.
+Telegram Bots são contas especiais que servirão como uma interface para os fluxos e as mensagens que serão enviadas via ilhapush. Bots diferem das contas padrão já que eles:
+Não possuem status on-line nem última mensagen vista, a interface mostra a etiqueta ‘bot’ em vez disso.
+São dados nomes de usuários que sempre terminam em ‘bot’ (por exemplo,@IlhaPushBot, @GitHub_bot).
+Agem como uma interface simples para a API do Telegram.
+Muito parecido com o ilhapush, os bots do Telegram permitem criar ferramentas personalizadas que fornecem alertas, previsões do tempo, traduções, ou outros serviços de pedido, por exemplo, bot Poll.
+
+Mensagens em massa
+Normalmente o Telegram não fornece um método para o envio de mensagens em massa ou notificações. Na verdade, um Bot não conectado ao ilhapush não pode iniciar conversas com novos usuários. Um novo usuário deve adicioná-los a um grupo ou enviar-lhes uma mensagem (eles podem usar o link telegram.me/~~number=plural <bot_username>  ou procurar o nome do usuário para encontrar o seu bot). No entanto, quando um bot está ligado à conta sua conta do ilhapush, seus contatos do Telegram se tornam contatos do ilhapush, o que lhe permite alavancar a nossa funcionalidade de difusão para iniciar conversas e enviar notificações em massa com facilidade.
