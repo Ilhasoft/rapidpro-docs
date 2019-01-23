@@ -1,0 +1,93 @@
+Besides the voice and SMS, IlhaPush allows you to apply our flows system to send the flows directly to the Facebook inbox. The flows to Facebook are useful to interact with the user that likes the company page. They allow you to get involved with the clients that are actives on a platform that serves more than 1,3 billions of actives users monthly. The U-Report, a UNICEF program, for example, uses the flows to Facebook to disclose the researches between the youth with different countries successfully.
+Connecting your account with the Facebook
+
+To connect your account with Facebook, first, we should create a facebook channel.
+
+1- Access your account, after that click on the “Add Channel” on the configuration button:
+
+INSERT A PRINT
+
+2- Next step is to choose the Facebook channel that is located in the social networking area:
+
+INSERT A PRINT
+
+3- Now we need to access the facebook to developers through the site https://developers.facebook.com
+4- On the top right in “My Apps” choose the option “Add a new APP”:
+
+INSERT A PRINT
+ 
+5- Choose now the option “Website”
+
+INSERT A PRINT
+
+6- Select your page, or type the name to create a new App.
+
+INSERT A PRINT
+
+7- Type your contact email, choose a category on your page and select “Create App ID”
+ 
+ INSERT A PRINT
+
+8- Select “Skip Quick Start”
+
+INSERT A PRINT
+
+9- Go to “Settings” and fill in the “Privacy Policy URL” fields (if your company have a website with the privacy policy, paste the link, if not, you can paste http://push.ilhasoft.mobi/) and “App Icon” (remember that the picture on this field should have 1024x1024 pixels and the background should be transparent). After that, go to the bottom right and select “Save Changes”.
+
+INSERT A PRINT
+
+10- On the guide “Settings” choose the option “Advanced”, in “App Page” select your page and click on again in “Save Changes” (if your page do not appear on this option, go to the 10.1)
+
+INSERT A PRINT
+
+10.1 – If your page is not available on this step, click on Add Product, after that click on “Get Started” in the Messenger option.
+
+INSERT A PRINT
+
+10.2 – On the next page, click on “Get Started”, come back to “settings” guide and still on the configurations.
+11- Select the “App Review” guide and in “Make (pages name) public” select “yes” and confirm.
+
+INSERT A PRINT
+
+12- Next step adds the messenger, click in “Products” select “Add Product” and select the “Messenger”.
+
+INSERT A PRINT
+
+13- In “Token Generation” select your page and copy the link that will be generated.
+
+INSERT A PRINT
+
+14- Come back to the IlhaPush Facebook channel page and paste the link generated in “Page Access Token” and click on “Submit”.
+ 
+INSERT A PRINT
+
+15- Come back to the Facebook developers page and select “Setup Webhooks”
+
+INSERT A PRINT
+
+16- Return again to IlhaPush and copy the “Webhook URL” and paste on the facebook guide “CallBack URL”. Do the same with “Verify Token”, select the boxes “message_deliveries”, “messaging_optins”, “messages” e “messaging_postbacks”  and finally click on “Verify and Save”.
+
+INSERT A PRINT
+
+17- Now we should create a flow in the IlhaPush so the messenger will interact with the user (if the flow is already done, do to the step 18). In the Push, go to the guide “Flows” and click on “Create Flow”.
+
+INSERT A PRINT
+
+18- When you create the flow, it is time to create a trigger to initialize it. Go to the guide “Triggers” and select “Create Triggers”. Select the option “Start a flow when a conversation is started by a contact”, select your page on Facebook, the flow that you created and click on  “Create Trigger”.
+
+INSERT A PRINT
+
+19- Now we are ready to do the first test. Go to the Facebook page and select “Message”, “Get Started” and the flow that you selected will start automatically.
+20- After doing the test, we can post our request to approbation. To do this, access again the Facebook for Developers, on your app go to the guide “Messenger”, on the field “App Review for Messenger” in “pages_messaging” select “Add to Submission”.
+
+INSERT A PRINT
+
+21- Scroll down the page and you will see a new option “Current Submission”, click on “Edit Notes”.
+
+INSERT A PRINT
+
+22- On the page that you will see select the page (A). On the box below (B) you should describe all defined keywords for the flow  (the words that you type will start a determined flow) and what this word will do (C), if it does not have any, select the option below(E). On the next box(D) describe everything that your App will do, for example, register users, information about users registration,  information about new events on the company,  contacts information, surveys, and at last click on “Save”.
+
+INSERT A PRINT
+
+23- Now we should wait for the Facebook answer informing that our API was approved or not, the maximum answer time is 5 days, but normally they answer in 2 days. If approved, the implementation to the user is automatic.
