@@ -32,7 +32,7 @@ The contacts can be imported with different addresses, but just one address for 
 
 INSERT A PRINT
 
-You can actualize the contact fields value, including the contact field and his importation value. The contacts address are kinds of standard fields, can be added, but not replaced through an importation if the UUID column has the UUID(s) contact(s). UUIDs contacts can be acquired through contacts (UUIDs are included in the contact exportation) exportation or using the contacts list consult on the API explorer. Go to your account, add the appropriated parameters to filter the wanted contacts and click on “GET”.
+You can actualize the contact fields value, including the contact field and his importation value. The contacts address are kind of standard fields, can be added, but not replaced through an importation if the UUID column has the UUID(s) contact(s). UUIDs contacts can be acquired through contacts (UUIDs are included in the contact exportation) exportation or using the contacts list consult on the API explorer. Go to your account, add the appropriated parameters to filter the wanted contacts and click on “GET”.
 
 INSERT A PRINT
 
