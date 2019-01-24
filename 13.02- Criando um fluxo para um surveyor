@@ -1,0 +1,15 @@
+Fluxos do Surveyor diferem dos de SMS ou de voz em que eles estão destinados a serem utilizados dentro da aplicação Surveyor Android em ambientes onde internet e sinal de celulares são fracos, ou inexistente. As mensagens enviadas são respondidas imediatamente, e roda o fluxo (resultados de fluxo) são salvos até que você seja capaz de enviá-los para a conta do ilhapush através da Internet. Note que os fluxos do Surveyor são iniciados através do aplicativo Surveyor Android.
+
+Criando um fluxo
+1- Para criar um fluxo, vá para a aba Fluxos e selecione “Criar Fluxo”
+2- Na janela Criar Fluxo que se abrirá escolha o nome do fluxo e na opção “Execução do fluxo finalizada” escolha “Surveyor”
+
+ INSERIR PRINT
+ 
+3- Acesse seu fluxo e selecione a opção para editar o fluxo
+
+INSERIR PRINT
+
+Note que em “Create a contact” temos duas opções para a criação de contatos:
+1- For each run: Por padrão, um novo fluxo Surveyor irá criar um novo contato para cada execução concluída. Você pode usar a ação Atualizar contato para salvar cada uma das respostas apresentadas ao perfil do contato. O caso de uso pretendido é para permitir enumeradores, gerentes de projeto e oficiais de M&A para coletar informações sobre uma pessoa, lugar, coisas ou idéias e salvar os resultados como um contato.
+2- By Login: Alternativamente, o fluxo de Surveyor pode ser executado apenas como fluxos de SMS por contatos que você baixou no aplicativo Surveyor. Como um canal de Twitter ou telegram, este fornece um canal de comunicação livre para seus contatos. Para usar Surveyor, desta forma, você deve desbloquear funções de conta e atribuir privilégios de Surveyor para os endereços de e-mail do contato que estarão usando o Surveyor desta forma. Em seguida, basta alternar o fluxo para criar um contato para cada login. Cada contato com um papel de Surveyor será capaz de baixar e executar o fluxo registrando-se com o seu endereço de e-mail e senha.
