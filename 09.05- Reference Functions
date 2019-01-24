@@ -76,7 +76,7 @@ FALSO ()
 Returns the logical value FALSE.
 
 IF (arg1, arg2, …)
-Return value if the condition was evaluated as TRUE, and another value was evaluated as FALSE, for example,
+Return the value if the condition was evaluated as TRUE, and another value was evaluated as FALSE, for example,
 Dear @(IF (contact.gender = “M”, “Mr.”, “Mrs.”))
 
 OR (arg1, arg2, …)
