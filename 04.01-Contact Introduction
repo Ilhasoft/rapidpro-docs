@@ -1,7 +1,7 @@
 A contact is a final user that interacted or will interact with the IlhaPush. The communication with the contacts happens through a channel. A contact can:
 
 Be created in the Contacts guide;
-Generate automatically when a new number communicates with your account through a channel;
+Be generate automatically when a new number communicates with your account through a channel;
 Or imported to your account through a spreadsheet XLS.
 
 On the Contacts guide, you can:
