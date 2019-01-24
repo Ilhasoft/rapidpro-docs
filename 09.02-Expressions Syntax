@@ -3,19 +3,19 @@ The expressions syntax are modeled as they are used in Microsoft Excel™ formul
 INSERT A PRINT
 
 Simple Syntax: Are used to call unique values, for example:
-Hello @contact, have you accessed the @flow.support, is it right?
-
+	Hello @contact, have you accessed the @flow.support, is it right?
+ 
 The expression also can be called functional, for example:   
-Hello @(UPPER(contact.first_name))
-Functional names do not differ the Upper and Lower case. On the example below, use UPPER will return the contact name in the Upper Case.
-IlhaPush recognizes a lot of Excel functions, let's list them:
+	Hello @(UPPER(contact.first_name))
+Functional names do not differ the Upper and Lower case. On the example below, using UPPER will return the contact name in the Upper Case.
 
+IlhaPush recognizes a lot of Excel functions, let's list them:
 Advanced Syntax: Are used to build more complex expressions using a syntax similar with Excel formula, for example:
-Hello @(PROPER(contact), Are you @(YEAR(NOW())) - flow.year_born) years old? Is it right?
+	Hello @(PROPER(contact), Are you @(YEAR(NOW())) - flow.year_born) years old? Is it right?
 
 Expressions also can include a arithmetic calc with sum (+),  subtraction (-), multiplication (*), division (/) and exponential (^):
-The result is @(1 + (1-3) * 4 / 5ˆ6).
+	The result is @(1 + (1-3) * 4 / 5ˆ6).
+  
 Notice that, the expression is between parenthesis to say to IlhaPush where the expression finishes.
-
 You can also use concatenation operators (join) (&), por exemplo:
-Hello @(contact.first_name & " " & contact.last_name).
+	Hello @(contact.first_name & " " & contact.last_name).
