@@ -3,7 +3,7 @@ Os endereços de um contato são um tipo de campo de contato padrão como Nome e
 INSERIR IMAGEM
 
 O menu “Add Connection” fornece uma entrada para você adicionar conexões de todos os tipos. Apenas uma ligação pode ser adicionada por vez. As setas apontando para cima à direita dos campos de endereço são o que você vai usar para priorizar os endereços do contato. 
-O ilhapush do seu contato reconhece o endereço de nível superior como prioritário, que é um indicador importante para as mensagens de saída. Vamos supor que a sua conta tem número de telefone, canais do Twitter e Telegram conectados e você enviará uma mensagem para 3 contatos, cada um com uma prioridade de endereço diferente. 
+O RapidPro do seu contato reconhece o endereço de nível superior como prioritário, que é um indicador importante para as mensagens de saída. Vamos supor que a sua conta tem número de telefone, canais do Twitter e Telegram conectados e você enviará uma mensagem para 3 contatos, cada um com uma prioridade de endereço diferente. 
 O canal que corresponde a prioridade de endereço de cada contato irá enviar-lhes a mensagem. Ou seja, você tem 3 canais de processamento de solicitação de mensagem de 1 de envio; seu canal Twitter vai enviar para aqueles com uma prioridade endereço de Twitter, o seu canal Telegram vai enviar para aqueles com uma prioridade endereço Telegram, e assim por diante. Caso contrário, o comportamento de prioridade de canal permanece o mesmo: prioridade de tipo de endereço de um contato irá ditar qual tipo de canal irá enviar mensagens para o contacto.
 
 INSERIR IMAGEM
@@ -21,6 +21,6 @@ Você pode atualizar valores de campo de um contato, incluindo o campo de contat
 
 INSERIR IMAGEM
 
-Ilhapush retornará todas as informações associadas com o seu contacto (s), incluindo o seu UUID(s).
+RapidPro retornará todas as informações associadas com o seu contacto (s), incluindo o seu UUID(s).
 Substituindo Endereços
 Neste momento, os endereços de contato só podem ser substituídos através da API de contatos Endpoint ou pela página de perfil de um contato na situação mencionada acima.
