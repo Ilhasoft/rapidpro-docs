@@ -2,4 +2,4 @@ Create a Twitter flow that follows the same model as a comum SMS flow.
 
 INSERT A PRINT
 
-Obs.: Ignore the characters counter when you write messages on this channel, Ilhapush will split the messages according to the character limit of the channel.
+Obs.: Ignore the characters counter when you write messages on this channel, RapidPro will split the messages according to the character limit of the channel.
