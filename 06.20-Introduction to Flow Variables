@@ -10,7 +10,7 @@ After to select the type of variable, press “enter”  and will appear a list 
 
 INSERT PRINT
 
-Press “Enter” again, so you will be allowed to specify metadados associated by ilhapush to each value. On the following example:
+Press “Enter” again, so you will be allowed to specify metadados associated by RapidPro to each value. In the following example:
 Category returns the category that the contacts answer was located;
 Text returns the complete response answer from a contact;
 Time returns the time when the contact message was received by the channel.
