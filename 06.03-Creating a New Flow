@@ -2,7 +2,7 @@ To create a flow, go to the guide “flows” and click on the button “Create 
 
 INSERT A PRINT
 
-The dialog box “Create a Flow” will appear, where you can:
+The dialog box “Create a Flow” will appear, so you can:
 Define the flows name;
 Attribute keyword triggers;
 Specify how much time the contacts still inactive on the flow before being deleted.
