@@ -1,4 +1,4 @@
-A contact is a final user that interacted or will interact with the IlhaPush. The communication with the contacts happens through a channel. A contact can:
+A contact is a final user that interacted or will interact with the RapidPro. The communication with the contacts happens through a channel. A contact can:
 
 Be created in the Contacts guide;
 Be generate automatically when a new number communicates with your account through a channel;
@@ -36,4 +36,4 @@ There are two ways to make a reference to the contacts fields into the flow:
 
 INSERT A PRINT
 
-As the message created by “Send a Message to Someone Else” was sent to Nelson IlhaSoft, @contact.first_name will be replaced for Nelson. @step.contact.name and @step.contact.tel will be replaced for the user name and phone number that needs support.
+As the message created by “Send a Message to Someone Else” was sent to Nelson RapidPro, @contact.first_name will be replaced for Nelson. @step.contact.name and @step.contact.tel will be replaced for the user name and phone number that needs support.
