@@ -1,4 +1,4 @@
-Um contato é um usuário final que tem, ou vai interagir com sua conta no ilhapush. A comunicação com os contatos ocorre através de um canal. Um contato pode ser:
+Um contato é um usuário final que tem, ou vai interagir com sua conta no RapidPro. A comunicação com os contatos ocorre através de um canal. Um contato pode ser:
 Criado dentro da aba Contatos;
 Gerada automaticamente quando um novo número de telefone interage com a sua conta através de um canal;
 Ou importada para a sua conta através de uma spreadsheet XLS.
@@ -30,4 +30,4 @@ Há duas maneiras de fazer referência a os campos dos seus contatos dentro de u
 
 INSERIR IMAGEM
 
-Como a mensagem criado pelo “Send a Message to Someone Else” foi encaminhada para Nelson IlhaSoft, @contact.first_name será substituído por Nelson. @step.contact.name e @step.contact.tel serão substituidos pelo nome e telefone do usuário que está precisando do suporte.
+Como a mensagem criado pelo “Send a Message to Someone Else” foi encaminhada para Nelson RapidPro, @contact.first_name será substituído por Nelson. @step.contact.name e @step.contact.tel serão substituidos pelo nome e telefone do usuário que está precisando do suporte.
