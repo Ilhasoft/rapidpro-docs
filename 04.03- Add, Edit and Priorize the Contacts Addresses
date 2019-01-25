@@ -3,7 +3,7 @@ The contacts addresses are a kind of contact field as name and groups. The conta
 INSERT A PRINT
 
 The “Add Connection” menu provides an entry that you can add a lot of kinds of connections. You can add just one call per time. The arrow pointing to the top located on the right of the address field is what you will use to prioritize the contacts address.
-The IlhaPush of your contact recognize the first address as the most import, that is a good indicator for the out messages. Let's imagine that your account has a phone number, Twitter and Telegram channels connected and you are going to send messages to 3 contacts, each one with a different priority.
+The RapidPro of your contact recognize the first address as the most import, that is a good indicator for the out messages. Let's imagine that your account has a phone number, Twitter and Telegram channels connected and you are going to send messages to 3 contacts, each one with a different priority.
 The channel that corresponds to the address priority of each contact that will send them a message. In other words, if you have 3 channels of solicitation message process of 1 sent; your Twitter channel will send for the contacts with priority on this channel, your Telegram channel will send for the contacts with priority on this channel, and the process repeats for all channels. On the contrary, the channel priority behavior still the same: the contact address priority will dictate what kind of messages the contact will receive.
 
 INSERT A PRINT
@@ -23,7 +23,7 @@ UUIDs contacts can be acquired through contacts exportations (UUIDs are included
 
 INSERT A PRINT
 
-Ilhapush will return all the information associated with your contact (s), including your UUID(s).
+RapidPro will return all the information associated with your contact (s), including your UUID(s).
 
 Replacing Addresses
 At this moment, the contacts addresses only can be replaced through the contacts API endpoint or through a contact profile mentioned above.
