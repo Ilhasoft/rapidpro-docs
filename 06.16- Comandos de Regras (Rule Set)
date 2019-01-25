@@ -30,7 +30,7 @@ Dividir por formulário de mensagem “Split by message form”: executa regras 
 
 (b) Dependendo do tipo de comando selecionado, este é o valor que as regras de resposta são avaliados. Este valor, chama um operador, que representa uma variável ou expressão. No conjunto de regras na foto acima, “se a resposta mensagem ..” indica que o operando é @step.value, ou a mensagem recebida.
 
-(c) As regras de resposta “response rules”: avaliam o operador selecionado. Regras de resposta são executadas a partir da esquerda para a direita. A primeira regra que corresponde entra em vigor e não as outras regras, que só serão avaliadas depois. Ilhapush combina cada palavra de uma vez e apenas uma única regra individual na ordem em que ele apareceu na string original.
+(c) As regras de resposta “response rules”: avaliam o operador selecionado. Regras de resposta são executadas a partir da esquerda para a direita. A primeira regra que corresponde entra em vigor e não as outras regras, que só serão avaliadas depois. RapidPro combina cada palavra de uma vez e apenas uma única regra individual na ordem em que ele apareceu na string original.
 
 INSERIR PRINT
 
