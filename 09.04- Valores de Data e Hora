@@ -1,4 +1,4 @@
-O IlhaPush emula quase todos os operadores disponíveis no Excel para data e hora. Por exemplo, para adicionar 7 dias a uma data, basta apenas somar 7 a data atual.
+O RapidPro emula quase todos os operadores disponíveis no Excel para data e hora. Por exemplo, para adicionar 7 dias a uma data, basta apenas somar 7 a data atual.
 Te vejo na próxima semana no dia @(date.today + 7)
 
 Para lembrar de uma data passada basta apenas subtrair os dias.
