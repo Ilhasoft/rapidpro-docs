@@ -13,7 +13,7 @@ Olá @(UPPER(contact.first_name))
 Nomes funcionais não reconhecem caixa alta ou baixo. No exemplo acima a chamada UPPER irá retornar o nome do contato em caixa alta.
 
 
-IlhaPush reconhece várias funções do Excel, vamos listá-las abaixo.
+RapidPro reconhece várias funções do Excel, vamos listá-las abaixo.
 Sintaxes Avançadas: São usadas para construir expressões mais complexas usando sintaxe semelhante à fórmula do Excel, por exemplo:
 
 Olá @(PROPER(contact)), Você tem @(YEAR(NOW()) - flow.year_born) de idade. Está correto?
@@ -22,7 +22,7 @@ Expressões também podem incluir a cálculo aritmético com a soma (+), subtra�
 
 Resultado é @(1 + (1-3) * 4 / 5ˆ6).
 
-Note que a expressão está entre parênteses para dizer ao  IlhaPush onde termina.
+Note que a expressão está entre parênteses para dizer ao  RapidPro onde termina.
 
 Você também pode participar de cordas com o operador de concatenação (join) (&), por exemplo:
 
