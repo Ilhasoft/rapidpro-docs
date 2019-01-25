@@ -1,15 +1,15 @@
-Canais permitem o envio e recebimento de mensagens e telefonemas através da sua conta Push, você poderá conectar quantos canais desejar. Cada canal possui uma taxa de transferência (quantidade de mensagens enviadas por segundo) diferente 
+Canais permitem o envio e recebimento de mensagens e telefonemas através da sua conta RapidPro, você poderá conectar quantos canais desejar. Cada canal possui uma taxa de transferência (quantidade de mensagens enviadas por segundo) diferente 
 
 Tipos de Canais
 
-Os canais disponíveis incluem: Agregador (SMS e voz), telefone Android (SMS), o aplicativo Push Surveyor, Twitter, Telegram e Facebook.
+Os canais disponíveis incluem: Agregador (SMS e voz), telefone Android (SMS), o aplicativo RapidPro Surveyor, Twitter, Telegram e Facebook.
 
 Agregadores (SMS e voz): Agregadores são serviços que processam mensagens através de múltiplas operadoras com rapidez e eficiência. Eles fornecem números virtuais e códigos curtos que são facilmente conectados a sua conta do Push através de uma integração com a plataforma. Twilio, Plivo, Nexmo, são alguns agregadores globais (capazes de atender vários países) Clickatell e Zenvia são exemplos de agregadores locais. Recomendamos a procura de agregadores locais antes de cometer um agregador global (as tarifas dos agregadores locais costumam ser mais baratas).
 
 SMS: Recomendamos a compra de um número móvel virtual gratuito do Twilio para a implantação de um serviço de SMS nos USA e Canadá, para demais localidades recomendamos a compra de um número convencional. Esse canal é recomendado para fluxos médios e altos já que as mensagens são encaminhadas de forma inteligente na sua frequência máxima. 
 A taxa de transferência para números gratuitos de Twilio é de 3 mensagens/segundo, enquanto a taxa de transferência padrão é de uma mensagem/segundo. Clique aqui para ver se Twilio oferece números móveis virtuais habilitados para SMS no seu país.
 
-Voz: É suportado quando a conta do Twilio está ligada a sua conta Push. Utilize um número Twilio com voz habilitado (pode ser padrão ou toll-free) para enviar e receber mensagens de voz, ou conectar tanto a sua conta Twilio, e um canal de telefone Android para a sua conta Push. 
+Voz: É suportado quando a conta do Twilio está ligada a sua conta RapidPro. Utilize um número Twilio com voz habilitado (pode ser padrão ou toll-free) para enviar e receber mensagens de voz, ou conectar tanto a sua conta Twilio, e um canal de telefone Android para a sua conta Push. 
 Você pode experimentar o nosso fluxo de demonstração de voz pelo telefone +1 888-531-0777, ou por mensagens de texto com a palavra “Hey”. Note que este é um número com base nos EUA.
 Descontos para organizações sem fins lucrativos: Twilio.org oferece US$ 500 em crédito e um desconto de 25% para organizações sem fins lucrativos.
 Android Phone (SMS): O canal de telefone Android usa nosso aplicativo Android free para transformar seu telefone em um transmissor de mensagem para a sua conta Push. Quando sua conta do Push envia uma mensagem, ele notifica o seu telefone Android. O telefone irá então enviar a mensagem a partir do seu número local em seu nome. Se alguém responder a essa mensagem, o telefone irá retransmitir a mensagem para a sua conta do Push. Você pode enviar até 330 mensagens/hora baixando nosso aplicativo de mensagens no Google Play Store. Ideal para:
@@ -22,6 +22,6 @@ Surveyor: O aplicativo Push Surveyor permite a manutenção do fluxo de trabalho
 
 Telegram: Telegram é um serviço baseado na nuvem de mensagens instantâneas – semelhante ao WhatsApp e WeChat – com um foco na velocidade, abertura e segurança, com taxa de transferência de 30 mensagens/segundo. É open source e encriptado ponta a ponta, o que significa que todos os dados enviados e recebidos via telegram não podem ser decifrados quando interceptados pelo ISP, administrador de rede ou de terceiros.
 
-Twitter: Integrar sua conta do Twitter permitirá que envie até 1.000 mensagens diretas/dia através da sua conta do Push.
+Twitter: Integrar sua conta do Twitter permitirá que envie até 1.000 mensagens diretas/dia através da sua conta do RapidPro.
 
 API Externo: O canal API externo permite-lhe enviar e receber mensagens através de fornecedores externos (outros que não são listados quando o usuário adicionar um canal). Este poderia ser um chat / serviço de mensagens externo ou um agregador não listado (embora nós estamos dispostos a integrar com agregadores caso haja um compromisso de 100.000 ou mais créditos). Por exemplo, se você quiser aproveitar a automationRapidPro fornece através de um serviço externo, você poderia escrever ganchos para o seu sistema e conectá-los através de seu API.RapidPro externa, então, enviar e receber mensagens no meio do serviço externo. Contanto que seus contatos têm o URN digite como o seu canal foi configurado para corresponder, nós enviaremos mensagens enviadas usando o ponto de extremidade de configurar.
