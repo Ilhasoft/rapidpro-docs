@@ -198,9 +198,9 @@ UPPER (text)
 Converts a text sequence in Upper case, for example,
 Welcome @(UPPER (contact)) !!
 
-IlhaPush Functions
+RapidPro Functions
 
-These functions are specifics from IlhaPush and are not found in the Excel, but was provided for convenience.
+These functions are specifics from RapidPro and are not found in the Excel, but was provided for convenience.
 
 FIELD (text, index, [delimiter])
 Refers to a field with a string split by a delimiter.
@@ -240,7 +240,7 @@ Extract a subchain of words that start in the beginner, until, but not including
 
 Problems Solution
 Why is only part of my expression evaluated?
-If the expression is not the only function or variable call, so you should put them into the brackets to IlhaPush know where it starts and finishes, for example, 
+If the expression is not the only function or variable call, so you should put them into the brackets to RapidPro know where it starts and finishes, for example, 
 
 @ (SUM (contact.reports, step.value)) * 2 <- o “* 2” is not evaluated, should be written as: 
 @ (SUM (contact.reports, step.value) * 2)
