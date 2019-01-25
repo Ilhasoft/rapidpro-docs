@@ -8,7 +8,7 @@ You have a lot of different channels of the same type connected to your account.
 The priority of the address contacts corresponds to a type of channels (for example, phone number) that has multiple channels (for example, different phone numbers). 
 The contact started the contact through a received message.
 
-Contacts Variable: The variables @contac represents contacts values fields specify for each contact presented on the flow.
+Contacts Variable: The variables @contac represents contacts values fields specifics for each contact presented on the flow.
 @Contact - The contact complete name if exists, if don't, your number, for example, “Ben Haggerty”.
 @Contact.name – As above, the contact complete name if exists, if don't, your number, for example, “Ben Haggerty”.
 @Contact.first_name – The contacts first name, if it was defined, if don't, the phone number, for example, “Ben”.
