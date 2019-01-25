@@ -46,7 +46,7 @@ A. The type of rule set that you would like to build:
  e. “Split by expression”: Execute answer rules using the expression result, as @(REMOVE_FIRST_WORD (step.value)), it includes a function that removes the first word of the last received message, represented by @step.variable.value. Expressions can include only one variable, only one function or a combination of variables and functions.
  f. “Split by message form”: Execute answers rules about a value split by a delimiter, for example, 1 + 2 + 3 + 4 + 5 (+ is the delimiter, while 1 is the first value, 2 is the second value, 3 is the third value, etc.).
 B. Depending on the type of the command selected, this is the value that the rules are going to be evaluated. This value, requires an operator, represents a variable or an expression. On the rule set on the picture below, “If the message..” indicates that the operator is @step.value or a received message.
-C. “Response Rules”: evaluate the selected operator. Response Rules are executed from left to right. The first rule correspondent starts. Ilhapush combines one word per time and just one individually rule on the original string order. 
+C. “Response Rules”: evaluate the selected operator. Response Rules are executed from left to right. The first rule correspondent starts. RapidPro combines one word per time and just one individually rule on the original string order. 
 
 INSERT A PRINT
 
