@@ -6,7 +6,7 @@ A flow can be started in a future date or a scheduled;
 A flow can be started through a campaign event;
 A flow can be started after a lost call;
 A flow can be started after a received call;
-A flow can be started after receive a message don't process in another place.
+A flow can be started after receiving a message not handled elsewhere.
 
 To initialize a flow for contact or groups through flow editor:
 1- Go to the guide “flow” click on the flow that you want to initialize.
