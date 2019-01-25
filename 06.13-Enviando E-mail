@@ -11,7 +11,7 @@ expressões, ex.: @ (HOUR (NOW ()))
 No exemplo abaixo, demonstramos como uma empresa pode usar esta ação para enviar um e-mail para a equipe notificando-os que um cliente está solicitando informações sobre seu produto.
 
 Criar um Email Pipeline
-Esta ação é também uma maneira super simples para encaminhar uma pergunta de um contato para um membro da equipe. Basta criar um fluxo que pede o nome de um contato, pergunta e método de resposta preferida, configure o ilhapush para enviar um e-mail contendo essa informação fora do ilhapush ou canal Slack. Os membros da equipe serão capazes de acessar instantaneamente o bilhete através do seu CRM ou ID do Slack e responder adequadamente.
+Esta ação é também uma maneira super simples para encaminhar uma pergunta de um contato para um membro da equipe. Basta criar um fluxo que pede o nome de um contato, pergunta e método de resposta preferida, configure o RapidPro para enviar um e-mail contendo essa informação fora do RapidPro ou canal Slack. Os membros da equipe serão capazes de acessar instantaneamente o bilhete através do seu CRM ou ID do Slack e responder adequadamente.
 
 INSERIR PRINT
 
