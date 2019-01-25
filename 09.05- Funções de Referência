@@ -200,8 +200,8 @@ UPPER (texto)
 Converte uma sequência de texto em maiúsculas, por exemplo,
 BEM-VINDO @(UPPER (contato)) !!
 
-Funções do IlhaPush
-Essas funções são específicas do IlhaPush e não são encontrados no Excel, mas foram fornecidas por uma questão de conveniência.
+Funções do RapidPro
+Essas funções são específicas do RapidPro e não são encontrados no Excel, mas foram fornecidas por uma questão de conveniência.
 
 FIELD (texto, índice, [delimitador])
 Referência a um campo em uma string separada por um delimitador.
@@ -242,6 +242,6 @@ Extrai uma subcadeia das palavras que começam no início, até, mas não inclui
 
 Solução de problemas
 Por que apenas uma parte da minha expressão é avaliada?
-Se a expressão não é uma única chamada de função ou variável, então você deve colocá-lo entre parênteses para o IlhaPush saber onde ela começa e termina, por exemplo,
+Se a expressão não é uma única chamada de função ou variável, então você deve colocá-lo entre parênteses para o RapidPro saber onde ela começa e termina, por exemplo,
 @ (SUM (contact.reports, step.value)) * 2 <- o “* 2” não é avaliado, deve ser escrito como:
 @ (SUM (contact.reports, step.value) * 2)
