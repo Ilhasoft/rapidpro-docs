@@ -5,12 +5,12 @@ An Action Set represents some actions done in name of the flow. Essentially, the
 Send an “SMS response”  (standard “send a message”: action – will send a message to the activated contacts that are on this flow step);
 Send an SMS to another person “SMS to somebody else” 
 “Add a label to a Message”;
-“Update the contact” (with a received from a response, for example);
+“Update the contact” (with a received value from a response, for example);
 “Add contact to a group”;
 “Remove contact from a group”;
 “Make a call to an external server”;
 “Send an Email”;
-“Set a contact’s preferred language”;
+“Set a contact’s main language”;
 “Start another flow”;
 “Start someone else in a flow”;
 
