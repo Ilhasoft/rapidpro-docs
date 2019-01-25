@@ -1,5 +1,5 @@
 Enviar uma mensagem de resposta é a ação que você vai usar para se comunicar com seus contatos com um fluxo, permitindo enviar uma mensagem automática quando atingem uma determinada etapa em um fluxo.
-No exemplo abaixo, estamos criando uma ação de “Send Message” que envia uma mensagem para pessoas que indicaram que têm interesse em Alagoas, se elas querem receber informações adicionais sobre o estado. Enviar Mensagem (Send Message), é a ação de fluxo padrão do ilhapush, são criadas cada vez que você arrastar uma ligação a partir do quadrado vermelho na parte inferior de cada ActionSet ou RuleSet.
+No exemplo abaixo, estamos criando uma ação de “Send Message” que envia uma mensagem para pessoas que indicaram que têm interesse em Alagoas, se elas querem receber informações adicionais sobre o estado. Enviar Mensagem (Send Message), é a ação de fluxo padrão do RapidPro, são criadas cada vez que você arrastar uma ligação a partir do quadrado vermelho na parte inferior de cada ActionSet ou RuleSet.
 Limite de caracteres
 Se uma ação Send Message exceder os 160 caracteres, ela será dividida e serão enviadas em duas mensagens. Há um contador abaixo da caixa de diálogo que mostra quantos caracteres faltam até para que você atinja os 160 caracteres digitados. No exemplo abaixo, a mensagem contém 54 caracteres.
  
