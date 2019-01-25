@@ -1,4 +1,4 @@
-Flow is the conditional logical tree visual representation applied for your contacts when they are in the flow. When the contact is in a flow, they interact directly with the steps. The steps are composed of Action commands, Rules commands and determine the flow length, that can be a simple and short flow or a complex and extensive flow.
+Flow is the conditional logical tree visual representation applied for your contacts when they are in the flow. When the contact is in a flow, they interact directly with the steps. The steps are composed by Action commands, Rules commands and determine the flow length, that can be a simple and short flow or a complex and extensive flow.
 
 INSERT A PRINT
 
@@ -6,24 +6,24 @@ Action Commands
 
 INSERT A PRINT
 
-The action command “ActionSet” represents some operations done in your flow. Essentially, they are commands that allow you:
+The action command “ActionSet” represents some operations done in your flow. Essentially, these are commands that allow you:
 Send an SMS answer “SMS response” (standard to “send a message”: action – will send a message to the actives contacts to reach this flows step);
 SMS to somebody else;
 Add a label to a Message;
 Update the contact  (with a value received from an answer, for example);
-Add contact to a group;
+Add a contact to a group;
 Remove contact from a group;
 Make a call to an external server;
 Send an Email;
-Set a contact’s preferred language;
+Set the contact’s main language;
 Start another flow;
 Start someone else in a flow;
 Action commands comprehend actions executed immediately, on a top-down order.
 
 RuleSet
 
-Rule Sets are connection points in a flow. They are conditionals declarations that allow direct your contacts using:
-A received or recorded a message
+Rule Sets are connection points in a flow. They are conditionals declarations that allow to direct your contacts using:
+A received or recorded message
 A contact field
 A flow variable
 A form field
@@ -45,7 +45,7 @@ A. The type of rule set that you would like to build:
  d. “Split by contact field”: Executes the answer rules saved in a contact field (name, phone number, etc.), referred using @contact.variable[variable name], for example, @contact.State.
  e. “Split by expression”: Execute answer rules using the expression result, as @(REMOVE_FIRST_WORD (step.value)), it includes a function that removes the first word of the last received message, represented by @step.variable.value. Expressions can include only one variable, only one function or a combination of variables and functions.
  f. “Split by message form”: Execute answers rules about a value split by a delimiter, for example, 1 + 2 + 3 + 4 + 5 (+ is the delimiter, while 1 is the first value, 2 is the second value, 3 is the third value, etc.).
-B. Depending on the type of the command selected, this is the value that the rules are going to be evaluated. This value, called an operator, represents a variable or an expression. On the rule set on the photo below, “If the message..” indicates that the operator is @step.value or a received message.
+B. Depending on the type of the command selected, this is the value that the rules are going to be evaluated. This value, requires an operator, represents a variable or an expression. On the rule set on the picture below, “If the message..” indicates that the operator is @step.value or a received message.
 C. “Response Rules”: evaluate the selected operator. Response Rules are executed from left to right. The first rule correspondent starts. Ilhapush combines one word per time and just one individually rule on the original string order. 
 
 INSERT A PRINT
@@ -62,7 +62,7 @@ When someone is at this point in the flow, wait for an answer. If the answer con
 *Flow context comprehends the available variables on a determined flow. These are the flow variables used by action commands, but you can add contacts variables associated with a contact used through a flow, or data obtained from an external font through a webhook.
 
 Flow members
-Flows are exclusive spaces where your contacts will get in and get out. When the contact is on the flow, it becomes a flow active member until the contact goes out of the flow. Passages through flow from entry to exit - is all activity that happens in the middle- constitutes a “race”. Races and activities happened are exposed as a flow result. “Races” flow can be listed and started externally through an API.
+Flows are exclusive spaces where your contacts will get in and get out. When the contact is on the flow, it becomes a flow active member until the contact goes out of the flow. Passages through flow from entry to exit - it is all activity that happens in the middle- constitutes a “race”. Races and activities happened into the flow are exposed as a flow result. “Races” flow can be listed and started externally through an API.
 The active members' number is represented by the blue button located on the top left of each rule set.
 
 INSERT A PRINT
@@ -83,7 +83,7 @@ A contact started by a flow through a message send for your channel that is not 
 Getting out a flow
 A contact will get out of a flow when:
 Completes a flow finishing the last step;
-Passes for a step that don't have a contiation;
+Passes for a step that don't have a continuation;
 Passe for an action that starts another flow;
 If the flow participation expired after a determined time of definitely inactivity on the flow dialog actualization into the flow editor.
 
