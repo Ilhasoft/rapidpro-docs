@@ -1,12 +1,4 @@
----
-id: wn003
-title: RapidPro & U-Report news
-sidebar_label: Website polls - Graphic vs. Words cloud
----
-
-# RapidPro & U-Report news: Website polls - Graphic vs. Words cloud
-
-## Hello
+# Website polls - Graphic vs. Words cloud
 
 Let's talk about the website today? One very interesting option to display Reporters' responses is using **Words cloud** instead of only graphics between replied categories.
 It's very simple to use it, but there are some points that I would like to share in order to be sure things works as it should.

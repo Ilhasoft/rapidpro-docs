@@ -1,14 +1,6 @@
----
-id: wn002
-title: RapidPro & U-Report news
-sidebar_label: Flow's names
----
+# Flow's names
 
-# RapidPro & U-Report news: Flow's names
-
-## Hello
-
-Today I would like to call your attention to flow's names. This seems to be a very simple feature and should do no harm right? Unfortunately not!
+Now I would like to call your attention to flow's names. This seems to be a very simple feature and should do no harm right? Unfortunately not!
 
 Giving the flow a name can cause some unexpected behaviors.
 For example using special characters like ***" # @ / : , . ! ' * % & $ ( | /*** can prevent contacts from receiving the flow properly depending on the channel they're supposed to reply. As every channel has it's own way to be connected to the platform it becomes quite challenging to fight issues like this.
