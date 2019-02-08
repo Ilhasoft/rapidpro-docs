@@ -1,10 +1,6 @@
----
-id: wn004
-title: Great categorization strategies at Wait for Responses
-sidebar_label: Wait for Response's categories
----
+# Wait for Response's categories
 
-# Less is more! Trust the power of a simple Wait for Response's category
+## Less is more! Trust the power of a simple Wait for Response's category
 
 One of the greatest features of RapidPro resides at Wait for Response's sorting options.
 It can help your poll have a huge response rate and 100% accuracy if used correctly, but you can get in trouble if miss-typed words or actionset links.
