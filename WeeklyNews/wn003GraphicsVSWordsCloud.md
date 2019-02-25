@@ -7,7 +7,7 @@ It's very simple to use it, but there are some points that I would like to share
 
 ![WordsCloud](https://udo-rapidpro-static-app.s3.amazonaws.com/attachments/211/5850/steps/a18594d7-6492-4bdb-beab-4cc2ef23fa7b.png "How a words cloud look like")
 
-Now let's see what's necessary to have it working. Let me share some RapidPro examples.
+Now let's see what's necessary to have it working. Let me share some examples.
 
 This is the most common way to have Reporters replies, using categories filter at the Wait for response:
 
