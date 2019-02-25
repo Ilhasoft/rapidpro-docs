@@ -11,7 +11,7 @@
 ## 2. Channels
 
     - Intro
-        "What a chanel is and many is possible to connect."
+        "What a channel is and many is possible to connect."
     - Adding channels
         "Setup a channel and test it."
     - Editing a channel
@@ -57,7 +57,7 @@
     - Intro
     - Creating a Keyword that launched a flow
     - Creating a Keyword that allows contacts to join a group
-    - Stating a flow in the future or schedule
+    - Starting a flow in the future or schedule
     - Start a flow after receiving a call
     - Start a flow after a missed call
     - Start a flow when a conversation is started by a contact
