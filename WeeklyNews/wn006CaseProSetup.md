@@ -6,7 +6,7 @@ How to direct message an anonymous reporter? That's the main purpose of UPartner
 
 To label messages correctly you need to build the flow like the example below, where the *Add Label* actionset is placed right after the *Wait for response*. That's very important as the Label feature is direct linked to the flow step.
 
-![LabelStep](img "Where to place the Add Label actionset")
+![LabelStep](/img/WN/wn006LabelStep.png "Where to place the Add Label actionset")
 
 ## Messaging the contact
 
