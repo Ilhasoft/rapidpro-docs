@@ -1,10 +1,10 @@
 ## SMS Integration ##
 
-The platform allows organizations to visually build scalable interactive messaging applications. The platform is a hosted service for visually building interactive messaging applications. To learn more, please visit the project site at http://rapidpro.github.io/rapidpro.	Dozens of channels are supported in collaboration with SMS Companies and social networks that communicates across different ways inside RapidPro. The integration in RapidPro can be basically done in two ways, by using a REST API or an SMSC connection.
+The platform allows organizations to visually build scalable interactive messaging applications. The platform is a hosted service for visually building interactive messaging applications. To learn more, please visit the project site at http://rapidpro.github.io/rapidpro.	Dozens of channels are supported in collaboration with SMS Companies and social networks that communicates across different ways inside the platform. The SMS integration can be basically done in two ways, by using a REST API or an SMSC connection.
 
 ### 1. Built-in Integration ###
 
-This is the quickest way to integrate the SMS channel to RapidPro, as its have the built-in functionality of sending and receiving messages to External services already available to all workspaces. There are two parts of this integration:
+This is the quickest way to integrate the SMS channel to the platform, as its have the built-in functionality of sending and receiving messages to External services already available to all workspaces. There are two parts of this integration:
 
 **Outgoing Messages**
 
@@ -32,7 +32,7 @@ from=%2B250788123123&text=Love+is+patient.+Love+is+kind.&date=2012-04-23T18:25:4
 
 ### 2.REST API ###
 
-RapidPro easily connects with many channels by using an HTTP API, that will be available to all the workspaces to add channels of the same aggregator. SMS Aggregator needs to provide the following information to integrate:
+The platform easily connects with many channels by using an HTTP API, that will be available to all the workspaces to add channels of the same aggregator. SMS Aggregator needs to provide the following information to integrate:
 
 - Full documentation about their public API, that includes authentication methods, input parameters and output format for each endpoint;
 - A test phone number provided by aggregator;
