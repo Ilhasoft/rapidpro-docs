@@ -1,12 +1,12 @@
-## RapidPro Integration ##
+## SMS Integration ##
  
  
-RapidPro allows organizations to visually build scalable interactive messaging applications. RapidPro is a hosted service for visually building interactive messaging applications. To learn more, please visit the project site at http://rapidpro.github.io/rapidpro​.
-Dozens of channels are supported in collaboration with SMS Companies and social networks that communicates across different ways inside RapidPro. The integration in RapidPro can be basically done in two ways, by using a REST API or an SMSC connection.
+The platform allows organizations to visually build scalable interactive messaging applications. The platform is a hosted service for visually building interactive messaging applications. To learn more, please visit the project site at http://rapidpro.github.io/rapidpro​.
+Dozens of channels are supported in collaboration with SMS Companies and social networks that communicates across different ways inside the platform. The SMS integration can be basically done in two ways, by using a REST API or an SMSC connection.
 
 ### 1. REST API ###
 
-RapidPro easily connects with many channels by using an HTTP API, that will be available to all the workspaces to add channels of the same aggregator. SMS Aggregator needs to provide the following information to integrate:
+The platform easily connects with many channels by using an HTTP API, that will be available to all the workspaces to add channels of the same aggregator. SMS Aggregator needs to provide the following information to integrate:
 
 - Full documentation about their public API, that includes authentication methods, input parameters and output format for each endpoint;
 - A test phone number provided by aggregator;
