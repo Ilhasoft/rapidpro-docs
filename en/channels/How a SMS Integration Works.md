@@ -24,7 +24,7 @@ Body:
 }
 
 **Incoming Messages**
-	
+
 When a new message is received by your service, it should notify us with a POST to the following URL, passing the following parameters: 'from' and 'text'. Callers can optionally also send a 'date' parameter in ISO-8601 (ex: 2012-04-23T18:25:43.511Z) format to specify the time the message was received. Example:
 
 POST https://rapidpro.ilhasoft.mobi/c/ex/a86f686f-9168-4dd9-a03e-77f11b265b56/receive
@@ -50,7 +50,7 @@ The first step to integrate depends on SMS aggregator, so it needs to provide th
 **- Virtual Private Network (VPN) form:** Typically the SMS aggregator has a form that requires information from the company that wants to communicate with their services through a VPN connection, in this case Ilhasoft;
 
 **- SMSC Credentials:**  Ilhasoft needs username, password, port and any other information that's necessary to send and receive messages for the aggregator;
-	
+
 Once the above items are fully-filled, Ilhasoft connects to the VPN and notify the aggregator to route incoming messages to Ilhasoft server and the testing phase is initiated. During these phases is necessary to contact members of Ilhasoft team directly, so the following contacts can be used:
 
 - Skype: john_dcc
