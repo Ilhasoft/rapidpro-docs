@@ -1,6 +1,6 @@
 # UParters - Proper use of features
 
-How to direct message an anonymous reporter? That's the main purpose of UPartners, where you can setup some strategies to access previous labeled messages and chat with contacts anonymously.
+How to direct message an anonymous reporter? That's the main purpose of U-Partners, where you can setup some strategies to access previous labeled messages and chat with contacts anonymously.
 
 ## Understand the scenario
 
