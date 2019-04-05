@@ -2,7 +2,7 @@
 
 ## Less is more! Trust the power of a simple Wait for Response's category
 
-One of the greatest features of RapidPro resides at Wait for Response's sorting options.
+One of the greatest features of the platform resides at Wait for Response's sorting options.
 It can help your poll have a huge response rate and 100% accuracy if used correctly, but you can get in trouble if miss-typed words or actionset links.
 
 Let's overview the feature and understand best practices.

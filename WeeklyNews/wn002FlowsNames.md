@@ -9,7 +9,7 @@ It can also affect triggers and referrers. Another example is creating a Faceboo
 You're safe to name flows using **-** or ***spaces***.
 
 So, there's a very simple way to avoid problems like this. Just don't use special character to give flows' name. 😀
-If it's really necessary there's a way to sort flows using a RapidPro feature called **Labels**.
+If it's really necessary there's a way to sort flows using a platform feature called **Labels**.
 All you have to do is select the box to the left of the flow name you want to sort and click at the tag icon so you can give that flow a label. If the label is already created all you need to do is click on it.
 
 ![FlowsLabels](https://udo-rapidpro-static-app.s3.amazonaws.com/attachments/211/5850/steps/2b713ea8-e96e-4d01-84d8-f42be7bdaffa.png "How to label a flow")
