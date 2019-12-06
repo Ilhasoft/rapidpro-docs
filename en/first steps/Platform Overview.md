@@ -1,4 +1,4 @@
-There are some features that you need to know as you create your account: Account, Messages, Contacts, Flows.
+\There are some features that you need to know as you create your account: Account, Messages, Contacts, Flows.
 
 ![](/img/first_steps/fs1.png)
 
@@ -14,13 +14,13 @@ There are some features that you need to know as you create your account: Accoun
 - Insert a country to habilitate the flow localization support;
 - Define the email address that is going to send the messages for the clients' emails, if it was solicited on the flow;
 - Connect to TransferTo(platform to send and receive credits);
-- Configure flows events.
+- Configure flow events.
 
 ![](/img/first_steps/fs2.png)
 
-If you use e-mail, reading and writing, messages in the platform should already be familiar to you. Just like e-mail, you have an Inbox and it's easy to label messages so you can follow up with them later. The Platform also allows you to schedule a message to be sent later or even as a reminder on a regular schedule.
+If you use e-mail, reading and writing, messages on the platform should already be familiar to you. Just like e-mail, you have an Inbox and it's easy to label messages so you can follow up with them later. The Platform also allows you to schedule a message to be sent later or even as a reminder on a regular schedule.
 
-For example you might have Platform send a message every Friday reminding people in the Field Staff group to complete their weekly report. If anybody joins the Field Staff group later, they will automatically start receiving the weekly reminder.
+For example, you might have Platform send a message every Friday reminding people in the Field Staff group to complete their weekly report. If anybody joins the Field Staff group later, they will automatically start receiving the weekly reminder.
 
 ![](/img/first_steps/fs3.png)
 
