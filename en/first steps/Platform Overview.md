@@ -1,4 +1,4 @@
-\There are some features that you need to know as you create your account: Account, Messages, Contacts, Flows.
+There are some features that you need to know as you create your account: Account, Messages, Contacts, Flows.
 
 ![](/img/first_steps/fs1.png)
 

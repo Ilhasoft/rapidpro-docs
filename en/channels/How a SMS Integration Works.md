@@ -1,6 +1,6 @@
 ## SMS Integration
 
-The platform allows organizations to visually build scalable interactive messaging applications. The platform is a hosted service for visually building interactive messaging applications. To learn more, please visit the project site at http://rapidpro.github.io/rapidpro.	Dozens of channels are supported in collaboration with SMS Companies and social networks that communicates across different ways inside the platform. The SMS integration can be basically done in two ways, by using a REST API or an SMSC connection.
+The platform allows organizations to visually build scalable interactive messaging applications. The platform is a hosted service for visually building interactive messaging applications. To learn more, please [visit the project site](http://rapidpro.github.io/rapidpro). Dozens of channels are supported in collaboration with SMS Companies and social networks that communicates across different ways inside the platform. The SMS integration can be basically done in two ways, by using a REST API or an SMSC connection.
 
 ### 1. Built-in Integration
 
