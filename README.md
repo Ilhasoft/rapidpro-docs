@@ -3,7 +3,7 @@
 ## 1. Getting Started
 
     - What's a Workspace?
-        "Talk about platform's features and how its dynamic works with messages exchange. What a channel is and its requirements to be connected."
+        "Talk about the platform's features and how its dynamic works with messages exchange. What a channel is and its requirements to be connected."
     - Platform Overview
         "Talk about known RapidPro project's servers. And how to access Ilhasoft's Push that has exclusive customized features."
     - How to gain access to test?
@@ -11,7 +11,7 @@
 ## 2. Channels
 
     - Intro
-        "What a channel is and many is possible to connect."
+        "What a channel is and how many is possible to connect."
     - Adding channels
         "Setup a channel and test it."
     - Editing a channel
@@ -29,8 +29,8 @@
 
     - Intro
     - Creating, editing and deleting groups
-        "Actions to groups has no direct effect on contacts nor its data."
-    - How groups interacts with contacts
+        "Actions to groups have no direct effect on contacts nor its data."
+    - How groups interact with contacts
         "Adding and removing processes. Static and Dynamic groups."
 
 ## 5. Flows
@@ -40,7 +40,7 @@
     - Types
     - Creating a flow in different languages
     - Action sets
-    - Rule sets
+    - Rulesets
     - Sending a Message through the flow
     - Adding Labels to Responses
     - Response Rule
